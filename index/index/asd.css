@@ -22,9 +22,9 @@ a:active {
 }
 
 .kep {
-    max-width: 14vh;
-    min-width: 14vh;
-    max-height: 14vh;
-    min-height: 14vh;
-    object-fit: scale-down;
+    max-width: 50vh;
+    min-width: 50vh;
+    max-height: 50vh;
+    min-height: 50vh;
+    object-fit: cover;
 }
