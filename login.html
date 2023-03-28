@@ -1,87 +1,71 @@
-<!DOCTYPE html>
-<html lang="hu">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="login.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="img/logokrp.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/logokrp.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/logokrp.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <title>Webleb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark .m-3">
-        <div class="">
-            <a class="navbar-brand" href="#">
-                <img src="img/logokrp.png" alt="" width="200" height="200">
-            </a>
-        </div>
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Spártai büfé</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Profil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Választék
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="hamburger.html">Hamburgerek</a></li>
-                            <li><a class="dropdown-item" href="pizza.html">Pizzák</a></li>
-                            <li><a class="dropdown-item" href="hotdog.html">Hot Dogok</a></li>
-                            <li><a class="dropdown-item" href="langos.html">Lángosok</a></li>
-                            <li><a class="dropdown-item" href="desszert.html">Desszertek</a></li>
-                            <li><a class="dropdown-item" href="ital.html">Italok</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="rol.html">Rólunk</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-</header>
-
-    <div class="login-box">
-        <h2>Login</h2>
-        <form action="">
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label for="">Username</label>
-          </div>
-          <div class="user-box">
-            <input type="password" name="" required="">
-            <label for="">Password</label>
-          </div>
-          <a href="">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            submit
-          </a>
-        </form>
-    </div>
-
-  
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<div class="form-group">
+												<input type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="https://www.web-leb.com/code" class="btn mt-4">Login</a>
+                      <p class="mb-0 mt-4 text-center"><a href="https://www.youtube.com/watch?v=SR6B8-_Ehw4" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-3 pb-3">Sign Up</h4>
+											<div class="form-group">
+												<input type="text" class="form-style" placeholder="Full Name">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="tel" class="form-style" placeholder="Phone Number">
+												<i class="input-icon uil uil-phone"></i>
+											</div>	
+                      <div class="form-group mt-2">
+												<input type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="https://www.web-leb.com/code" class="btn mt-4">Register</a>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
 </body>
 </html>
