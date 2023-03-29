@@ -100,6 +100,7 @@
 		function log() {
 			const email_chk = localStorage.getItem('mail');
 			const pass_chk = localStorage.getItem('pass');
+			const name_chk = localStorage.getItem('name');
 			if (mail.value != "" && pass.value != "") {
 				if (mail.value == email_chk && pass.value == pass_chk) {
 					window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP', '_self');
@@ -109,7 +110,7 @@
 				}
 			}
 
-			if (name_reg.value != "") {
+			if (name_chk != "") {
 				document.getElementById('hiba_log').innerHTML = "SIGN UP PELASE!"
 			}
 		}
