@@ -15,16 +15,31 @@
             padding: 0;
         }
         
+        .card {
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
         .card img {
             max-width: 100vh;
             min-width: 40vh;
             max-height: 40vh;
             min-height: 40vh;
             object-fit: cover;
+            transition: all 0.5s ease-out;
         }
         
-        .card {
-            overflow: hidden;
+        .card:hover {
+            box-shadow: rgba(243, 52, 38, 0.25) 0px 20px 50px -20px, rgba(253, 85, 85, 0.644) 0px 30px 60px -30px, rgba(26, 119, 211, 0.35) 0px -2px 6px 0px inset;
+        }
+        
+        .card:hover img {
+            scale: 1.04;
+        }
+        
+        .card-body {
+            background-color: rgb(255, 252, 250);
+            z-index: 1;
         }
         
         .logo {
@@ -84,7 +99,7 @@
                     <li><a href="#" class="nav-link px-2 text-white">KAJÁK</a></li>
                     <li>
                         <a href="#" class="nav-link px-2 text-white fa-solid fa-cart-shopping fa-2x">
-                            <span id="kosarban" class=" top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                            <span id="kosarban" class="top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
                         </a>
                     </li>
                 </ul>
@@ -114,7 +129,7 @@
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p>ÁR</p>
+                        <p class="fa-solid fa-face-grin-tongue-squint fa-bounce"> 500 Ft</p>
                     </div>
                 </div>
             </div>
