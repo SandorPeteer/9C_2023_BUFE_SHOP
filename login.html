@@ -31,14 +31,14 @@
 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password" id="pass">
+												<input type="password" class="form-style" placeholder="Password"
+													id="pass">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<div class="form-group mt-2">
 												<p id="hiba_log"></p>
 											</div>
-											<a href="#"
-												class="btn mt-4" onclick="log()">Login</a>
+											<a href="#" class="btn mt-4" onclick="log()">Login</a>
 											<p class="mb-0 mt-4 text-center"><a
 													href="https://www.youtube.com/watch?v=SR6B8-_Ehw4"
 													class="link">Forgot your password?</a></p>
@@ -50,26 +50,29 @@
 										<div class="section text-center">
 											<h4 class="mb-3 pb-3">Sign Up</h4>
 											<div class="form-group">
-												<input type="text" class="form-style" placeholder="Full Name" id="name_reg">
+												<input type="text" class="form-style" placeholder="Full Name"
+													id="name_reg">
 												<i class="input-icon uil uil-user"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="tel" class="form-style" placeholder="Phone Number" id="phone_reg">
+												<input type="tel" class="form-style" placeholder="Phone Number"
+													id="phone_reg">
 												<i class="input-icon uil uil-phone"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="email" class="form-style" placeholder="Email" id="mail_reg">
+												<input type="email" class="form-style" placeholder="Email"
+													id="mail_reg">
 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password" id="pass_reg">
+												<input type="password" class="form-style" placeholder="Password"
+													id="pass_reg">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
 											<div class="form-group mt-2">
 												<p id="hiba_reg"></p>
 											</div>
-											<a href="#"
-												class="btn mt-4" onclick="reg()">Register</a>
+											<a href="#" class="btn mt-4" onclick="reg()">Register</a>
 										</div>
 									</div>
 								</div>
@@ -82,30 +85,32 @@
 	</div>
 
 	<script>
-		function reg(){
+		function reg() {
 			localStorage.setItem("mail", mail_reg.value)
 			localStorage.setItem("pass", pass_reg.value)
 			localStorage.setItem("name", name_reg.value)
 			localStorage.setItem("phone", phone_reg.value)
-			if (mail_reg.value != "" && pass_reg.value != ""){
-				window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP','_self');
+			if (mail_reg.value != "" && pass_reg.value != "") {
+				window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP', '_self');
 			}
-			else{
+			else {
 				document.getElementById('hiba_reg').innerHTML = "HIBA"
 			}
 		}
-		function log(){
+		function log() {
 			const email_chk = localStorage.getItem('mail');
 			const pass_chk = localStorage.getItem('pass');
 			localStorage.setItem("mail", mail.value)
 			localStorage.setItem("pass", pass.value)
-			if (mail.value == email_chk  && pass.value == pass_chk ){
-				window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP','_self');
+			if (mail.value != "" && pass.value != "") {
+				if (mail.value == email_chk && pass.value == pass_chk) {
+					window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP', '_self');
+				}
 			}
-			else{
+			else {
 				document.getElementById('hiba_log').innerHTML = "HIBA"
 			}
-			if (name_reg != ""){
+			if (name_reg != "") {
 				document.getElementById('hiba_log').innerHTML = "SIGN UP PELASE!"
 			}
 		}
