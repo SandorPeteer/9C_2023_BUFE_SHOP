@@ -346,7 +346,6 @@
     <script>
         // Termék keresés
         var searchInput = document.querySelector('#search-input');
-        var searchButton = document.querySelector('#search-button');
         var productCards = document.querySelectorAll('.card');
 
         searchInput.addEventListener('input', function () {
@@ -362,12 +361,7 @@
             });
         });
 
-        searchButton.addEventListener('click', function () {
-            searchInput.value = '';
-            productCards.forEach(function (card) {
-                card.style.display = 'block';
-            });
-        });
+        
     </script>
 
 
