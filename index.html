@@ -89,9 +89,8 @@
 
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Keresés..." aria-label="Search">
+                    <input type="search" class="form-control form-control-dark text-bg-light" id="search-input" placeholder="Keresés..." aria-label="Search">
                 </form>
-
 
 
                 <div class="text-end">
@@ -284,6 +283,35 @@
             </div>
         </footer>
     </div>
+
+
+    <script>
+        // Termék keresés
+        var searchInput = document.querySelector('#search-input');
+        var searchButton = document.querySelector('#search-button');
+        var productCards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', function() {
+            var searchTerm = searchInput.value.trim().toLowerCase();
+            productCards.forEach(function(card) {
+                var title = card.querySelector('.card-title').textContent.trim().toLowerCase();
+                var description = card.querySelector('.card-text').textContent.trim().toLowerCase();
+                if (title.indexOf(searchTerm) !== -1 || description.indexOf(searchTerm) !== -1) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        searchButton.addEventListener('click', function() {
+            searchInput.value = '';
+            productCards.forEach(function(card) {
+                card.style.display = 'block';
+            });
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
