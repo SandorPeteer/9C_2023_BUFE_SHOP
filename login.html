@@ -27,14 +27,15 @@
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">Log In</h4>
 											<div class="form-group">
-												<input type="email" class="form-style" placeholder="Email">
+												<input type="email" class="form-style" placeholder="Email" id="mail">
 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password">
+												<input type="password" class="form-style" placeholder="Password" id="pass">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP" class="btn mt-4">Login</a>
+											<a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP"
+												class="btn mt-4">Login</a>
 											<p class="mb-0 mt-4 text-center"><a
 													href="https://www.youtube.com/watch?v=SR6B8-_Ehw4"
 													class="link">Forgot your password?</a></p>
@@ -46,22 +47,23 @@
 										<div class="section text-center">
 											<h4 class="mb-3 pb-3">Sign Up</h4>
 											<div class="form-group">
-												<input type="text" class="form-style" placeholder="Full Name">
+												<input type="text" class="form-style" placeholder="Full Name" id="name_reg">
 												<i class="input-icon uil uil-user"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="tel" class="form-style" placeholder="Phone Number">
+												<input type="tel" class="form-style" placeholder="Phone Number" id="phone_reg">
 												<i class="input-icon uil uil-phone"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="email" class="form-style" placeholder="Email">
+												<input type="email" class="form-style" placeholder="Email" id="mail_reg">
 												<i class="input-icon uil uil-at"></i>
 											</div>
 											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password">
+												<input type="password" class="form-style" placeholder="Password" id="pass_reg">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP" class="btn mt-4">Register</a>
+											<a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP"
+												class="btn mt-4">Register</a>
 										</div>
 									</div>
 								</div>
@@ -72,6 +74,20 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		function reg(){
+			localStorage.setItem("mail", mail_reg.value)
+			localStorage.setItem("pass", pass_reg.value)
+			localStorage.setItem("name", name_reg.value)
+			localStorage.setItem("phone", phone_reg.value)
+		}
+		function log(){
+			localStorage.setItem("mail", mail.value)
+			localStorage.setItem("pass", pass.value)
+		}
+	</script>
+
 </body>
 
 </html>
