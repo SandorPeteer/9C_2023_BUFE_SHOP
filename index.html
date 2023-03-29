@@ -5,22 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEBSHOP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
+
         * {
             margin: 0;
             padding: 0;
         }
-        
+
         .card {
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             margin-bottom: 5%;
         }
-        
+
         .card img {
             max-width: 100vh;
             min-width: 40vh;
@@ -29,20 +32,20 @@
             object-fit: cover;
             transition: all 0.5s ease-out;
         }
-        
+
         .card:hover {
             box-shadow: rgba(243, 52, 38, 0.25) 0px 20px 50px -20px, rgba(253, 85, 85, 0.644) 0px 30px 60px -30px, rgba(26, 119, 211, 0.35) 0px -2px 6px 0px inset;
         }
-        
+
         .card:hover img {
             scale: 1.04;
         }
-        
+
         .card-body {
             background-color: rgb(255, 252, 250);
             z-index: 1;
         }
-        
+
         .logo {
             width: 50px;
             height: 50px;
@@ -51,16 +54,16 @@
             border-radius: 100%;
             border: 2px solid brown;
         }
-        
+
         p,
         label {
             font-family: 'Roboto Mono', monospace;
         }
-        
+
         li {
             font-family: 'Space Grotesk', sans-serif;
         }
-        
+
         .b-example-divider {
             width: 100%;
             height: 3rem;
@@ -69,13 +72,13 @@
             border-width: 1px 0;
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
         }
-        
+
         .b-example-vr {
             flex-shrink: 0;
             width: 1.5rem;
             height: 100vh;
         }
-        
+
         .bi {
             vertical-align: -.125em;
             fill: currentColor;
@@ -84,35 +87,40 @@
 
 </head>
 
-<body>
+<body onload="nev()">
 
 
     <header class="p-3 text-bg-dark">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-                <a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                     <img class="logo" src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/logokrp.png" alt="logo">
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">KAJÁK</a></li>
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
+                            class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" id="név"> </a></li>
                     <li>
                         <a href="#" class="nav-link px-2 text-white fa-solid fa-cart-shopping fa-2x">
-                            <span id="kosarban" class="top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                            <span id="kosarban"
+                                class="top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
                         </a>
                     </li>
                 </ul>
 
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <input type="search" class="form-control form-control-dark text-bg-light" id="search-input" placeholder="Keresés..." aria-label="Search">
+                    <input type="search" class="form-control form-control-dark text-bg-light" id="search-input"
+                        placeholder="Keresés..." aria-label="Search">
                 </form>
 
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2 bg-danger" onclick="window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html', '_self')">Login</button>
+                    <button type="button" class="btn btn-outline-light me-2 bg-danger"
+                        onclick="window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html', '_self')">Login</button>
                 </div>
 
             </div>
@@ -126,10 +134,12 @@
         <div class="row m-2">
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t001">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <span class="text-bg-danger p-1 mx-4"> HOT </span>
                         <p class="fa-solid fa-face-grin-tongue-squint fa-bounce">500 Ft</p>
                     </div>
@@ -137,30 +147,36 @@
             </div>
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
@@ -172,40 +188,48 @@
         <div class="row m-2">
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t005">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t006">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t007">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t008">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg" class="card-img-top" alt="...">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/hamburger.jpg.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">HAMBURGER</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                         <p>ÁR</p>
                     </div>
                 </div>
@@ -228,9 +252,11 @@
                 <div class="modal-body">
                     <form action="javascript:void(0)">
                         <p>feltétek:</p>
-                        <label for="ketchup">ketchup: </label> <input type="checkbox" name="t001_termek" id="ketchup"> <br>
+                        <label for="ketchup">ketchup: </label> <input type="checkbox" name="t001_termek" id="ketchup">
+                        <br>
                         <label for="mustar">mustár: </label> <input type="checkbox" name="t001_termek" id="mustar"> <br>
-                        <label for="majonez">majonéz: </label> <input type="checkbox" name="t001_termek" id="majonez"> <br>
+                        <label for="majonez">majonéz: </label> <input type="checkbox" name="t001_termek" id="majonez">
+                        <br>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -295,9 +321,15 @@
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>&copy; 2023 Company, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
                 </ul>
             </div>
         </footer>
@@ -305,14 +337,21 @@
 
 
     <script>
+        function nev(){
+            const neve = localStorage.getItem("name")
+            document.getElementById('név').innerHTML = neve;
+        }
+    </script>
+
+    <script>
         // Termék keresés
         var searchInput = document.querySelector('#search-input');
         var searchButton = document.querySelector('#search-button');
         var productCards = document.querySelectorAll('.card');
 
-        searchInput.addEventListener('input', function() {
+        searchInput.addEventListener('input', function () {
             var searchTerm = searchInput.value.trim().toLowerCase();
-            productCards.forEach(function(card) {
+            productCards.forEach(function (card) {
                 var title = card.querySelector('.card-title').textContent.trim().toLowerCase();
                 var description = card.querySelector('.card-text').textContent.trim().toLowerCase();
                 if (title.indexOf(searchTerm) !== -1 || description.indexOf(searchTerm) !== -1) {
@@ -323,16 +362,18 @@
             });
         });
 
-        searchButton.addEventListener('click', function() {
+        searchButton.addEventListener('click', function () {
             searchInput.value = '';
-            productCards.forEach(function(card) {
+            productCards.forEach(function (card) {
                 card.style.display = 'block';
             });
         });
     </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
