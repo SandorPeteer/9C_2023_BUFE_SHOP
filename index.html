@@ -339,7 +339,7 @@
     <script>
         function nev(){
             const neve = localStorage.getItem("name")
-            document.getElementById('név').innerHTML = neve;
+            if (neve != "") document.getElementById('név').innerHTML = neve;
         }
     </script>
 
