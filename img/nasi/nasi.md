@@ -1,0 +1,1 @@
+ide rakjátok a nasikat
