@@ -100,8 +100,6 @@
 		function log() {
 			const email_chk = localStorage.getItem('mail');
 			const pass_chk = localStorage.getItem('pass');
-			localStorage.setItem("mail", mail.value)
-			localStorage.setItem("pass", pass.value)
 			if (mail.value != "" && pass.value != "") {
 				if (mail.value == email_chk && pass.value == pass_chk) {
 					window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP', '_self');
