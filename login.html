@@ -34,7 +34,7 @@
 												<input type="password" class="form-style" placeholder="Password" id="pass">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP"
+											<a href="#"
 												class="btn mt-4" onclick="log()">Login</a>
 											<p class="mb-0 mt-4 text-center"><a
 													href="https://www.youtube.com/watch?v=SR6B8-_Ehw4"
@@ -62,7 +62,7 @@
 												<input type="password" class="form-style" placeholder="Password" id="pass_reg">
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP"
+											<a href="#"
 												class="btn mt-4" onclick="reg()">Register</a>
 										</div>
 									</div>
@@ -81,10 +81,16 @@
 			localStorage.setItem("pass", pass_reg.value)
 			localStorage.setItem("name", name_reg.value)
 			localStorage.setItem("phone", phone_reg.value)
+			if (mail.value != "" && pass.value != ""){
+				window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP','_self');
+			}
 		}
 		function log(){
 			localStorage.setItem("mail", mail.value)
 			localStorage.setItem("pass", pass.value)
+			if (mail.value != "" && pass.value != ""){
+				window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP','_self');
+			}
 		}
 	</script>
 
