@@ -97,7 +97,7 @@
 		function log(){
 			localStorage.setItem("mail", mail.value)
 			localStorage.setItem("pass", pass.value)
-			if (mail.value != "" && pass.value != ""){
+			if (mail.value != localStorage.getItem('mail') && pass.value != localStorage.getItem('pass')){
 				window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP','_self');
 			}
 			else{
