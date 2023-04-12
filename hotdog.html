@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotdog</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,12 +16,96 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/logokrp.png">
     <link rel="manifest" href="/site.webmanifest">
        <style>
-        body{
-            background: linear-gradient( red , black);
-        }
-        span{
-            color: brown;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 5%;
+}
+
+.card img {
+    max-width: 100vh;
+    min-width: 40vh;
+    max-height: 40vh;
+    min-height: 40vh;
+    object-fit: cover;
+    transition: all 0.5s ease-out;
+}
+
+.card:hover {
+    box-shadow: rgba(243, 52, 38, 0.25) 0px 20px 50px -20px, rgba(253, 85, 85, 0.644) 0px 30px 60px -30px, rgba(26, 119, 211, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card:hover img {
+    scale: 1.04;
+}
+
+.card-body {
+    background-color: rgb(255, 252, 250);
+    z-index: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: 33%;
+    border-radius: 100%;
+    border: 2px solid brown;
+}
+
+p,
+label {
+    font-family: 'Roboto Mono', monospace;
+}
+
+li {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+body{
+background: linear-gradient( red , black);
+}
+footer{
+background: dark
+}
+span{
+    color: brown;
+}
+.card-title{
+    color: #ED2939;
+}
+.card-text{
+    color: #CD5C5C;
+}
+.card-body{
+    color: #FF2400;
+}
     </style>
 </head>
 <body>
@@ -69,6 +153,140 @@
         </nav>
     </header>
      <div class="b-example-divider"></div>
+
+     <main class="container">
+
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t001">
+                    <img src="../hot-doglite.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog Lite</h5>
+                        <p class="card-text">Egy sima hotdog semmi feltéttel.</p>
+                        <span class="text-bg-danger p-1 mx-4"> HOT </span>
+                        <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">350 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                    <img src="../hot-dog.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">      
+                        <h5 class="card-title">Hot-Dog</h5>
+                        <p class="card-text">Egy hotdog alap feltéttel(Ketchup,Majonéz)</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">400 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                    <img src="../hot-dogxtracheez.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog Cheezy</h5>
+                        <p class="card-text">Egy normál hotdog plusz sajttal nagyon finom.</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">450 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                    <img src="../hotdogeröspista.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog X-tra Hot</h5>
+                        <p class="card-text">Hotdog Erős Pistával azoknak ajánlom akik bírják a csípőset.</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">500 Ft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t005">
+                    <img src="../hotdogonion.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog Onion</h5>
+                        <p class="card-text">Hotdog sült hagymával ennyit tudok leírni róla.</p>
+                        <span class="text-bg-danger p-1 mx-4"> HOT </span>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">550 Ft</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t006">
+                    <img src="../hotdogmustard.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog Mustard</h5>
+                        <p class="card-text">Hotdog de majonéz helyett mustár található benne.</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">480 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t007">
+                    <img src="../hotdogspecial1.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog Special 1</h5>
+                        <p class="card-text">Az egyik legspeciálisabb hotdog Sült babbal és chips-el. Nagyon elegáns.
+                        </p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">600 Ft</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t008">
+                    <img src="../hotdogxxtracheeze.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Hot-Dog XX-tra Cheezy</h5>
+                        <p class="card-text">Hotdog csak sajttal semmi több.</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">500 Ft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="t001" tabindex="-1" aria-labelledby="t001_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="t001_label">HAMBURGER</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0)">
+                        <p>feltétek:</p>
+                        <label for="ketchup">ketchup: </label> <input type="checkbox" name="t001_termek" id="ketchup">
+                        <br>
+                        <label for="mustar">mustár: </label> <input type="checkbox" name="t001_termek" id="mustar"> <br>
+                        <label for="majonez">majonéz: </label> <input type="checkbox" name="t001_termek" id="majonez">
+                        <br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSE</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">KÉREM</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <footer class="bg-dark text-danger">
     <div class="container">
