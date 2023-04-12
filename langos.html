@@ -15,13 +15,105 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/logokrp.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logokrp.png">
     <link rel="manifest" href="/site.webmanifest">
-     <style>
+       <style>
         body{
             background: linear-gradient( red , black);
         }
         span{
             color: brown;
         }
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 5%;
+}
+
+.card img {
+    max-width: 100vh;
+    min-width: 40vh;
+    max-height: 40vh;
+    min-height: 40vh;
+    object-fit: cover;
+    transition: all 0.5s ease-out;
+}
+
+.card:hover {
+    box-shadow: rgba(243, 52, 38, 0.25) 0px 20px 50px -20px, rgba(253, 85, 85, 0.644) 0px 30px 60px -30px, rgba(26, 119, 211, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card:hover img {
+    scale: 1.04;
+}
+
+.card-body {
+    background-color: rgb(255, 252, 250);
+    z-index: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: 33%;
+    border-radius: 100%;
+    border: 2px solid brown;
+}
+
+p,
+label {
+    font-family: 'Roboto Mono', monospace;
+}
+
+li {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+body{
+background: linear-gradient( red , black);
+}
+footer{
+background: dark
+}
+span{
+    color: brown;
+}
+.card-title{
+    color: #ED2939;
+}
+.card-text{
+    color: #CD5C5C;
+}
+.card-body{
+    color: #FF2400;
+}
+    </style>
+
     </style>
 </head>
 <body>
@@ -70,11 +162,118 @@
     </header>
      <div class="b-example-divider"></div>
 
-  <footer class="bg-dark text-danger">
+     <main class="container">
+
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t001">
+                    <img src="nutellás.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">HAMBURGER (nutellás  lángos )</h5>
+                        <p class="card-text">Sima Lángos. Sima lángos, fokhagymával vagy anélkül. Hagyományosan, kelt tészából készült, egyéb tejternék, vagy tojás hozzáadása nélkül.</p>
+                        <p class="fa-solid fa-face-grin-tongue-squint fa-bounce">800 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                    <img src="img/sajtos-tejfolos.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">      
+                        <h5 class="card-title">Francia Pirítós (klasszik lángos)</h5>
+                        <p class="card-text">Mennyei sajtos-tejfölös lángos házilag, ami fokhagymával megkenve a legfinomabb. </p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">500 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                    <img src="img/vegan_langos.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Pizza (vegán lángos)</h5>
+                        <p class="card-text">Bár a lángos alapvetően bő olajban sült lepény, azok, akik szeretnének minimális olajat tartalmazó vegán lángost készíteni</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">2000 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/langos.jpg.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Lángos</h5>
+                        <p class="card-text">A lángos ízletes és laktató tökéletes választás és az egyik legjobb magyar étel a sok közül.</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">1000 Ft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t005">
+                    <img src="img/krumpli-langos.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Meleg Szendvics (krumpli langos)</h5>
+                        <p class="card-text">  Ilyen egyszerű és nagyszerű</p>
+                        
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce">600 Ft</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t006">
+                    <img src="img/sima langos.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Gyros (diétás lángos)</h5>
+                        <p class="card-text"> Diétás lángos ízlés szerint tejföl vagy dr. Oetker vegán krém · ízlés szerint fokhagyma · ízlés szerint reszelt mozzarella sajt vagy kecskesajt.</p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">150 Ft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t007">
+                    <img src="img/fokhagymas.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">fokhagymás lángos</h5>
+                        <p class="card-text">Nem mestermunkák ezek, s bár a receptek zömét én találom ki,</p>
+                        
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce">450 Ft</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t008">
+                    <img src="img/kecsapos.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Rántott húsos szendvics (kecsapos lángos)</h5>
+                        <p class="card-text"></p>
+                            <p class="fa-solid fa-face-grin-tongue-squint fa-bounce" align="center">500 Ft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+<footer class="bg-dark text-danger">
     <div class="container">
         <footer class="py-5">
             <div class="row">
-                <div class="col-6 col-md-2 mb-3" >
+                               <div class="col-6 col-md-2 mb-3" >
                     <h5>Section</h5>
                     <ul class="nav flex-column text-danger">
                         <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
