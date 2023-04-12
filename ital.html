@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
         integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
 
@@ -44,6 +45,7 @@
         .card-body {
             background-color: rgb(255, 252, 250);
             z-index: 1;
+            color: #ff2400
         }
 
         .logo {
@@ -92,8 +94,31 @@
         .kosarba{
             border: red solid 2px;
         }
-        .felirat{
+        .felirat1{
             text-align: center;
+            color: #450303
+        }
+        .felirat2{
+            text-align: center;
+            color: #4e0303
+        }
+        .felirat3{
+            text-align: center;
+            color: #ff0000
+        }
+        .felirat4{
+            text-align: center;
+            color: #
+        }
+
+        .card-title{
+            color: #ed2939
+        }
+        .card-text{
+            color: #cd5c5c
+        }
+        span{
+            color: brown
         }
       
     </style>
@@ -143,7 +168,7 @@
     <main class="container">
 
         <br>
-        <h1 class="felirat">Kólák</h1>
+        <h1 class="felirat1">Kólák</h1>
         <br>
     
         <!-- Termékek sora -->
@@ -153,8 +178,8 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cocacola.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Coca-Cola </h5>
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title ">Coca-Cola </h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
                     </div>
@@ -164,7 +189,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cocacolalight.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Coca-Cola Light</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT </p>
@@ -175,7 +200,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cocacolazero.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Coca-Cola Zero</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
@@ -186,7 +211,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cocacolacherry.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Coca-Cola Cherry</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 400FT</p>
@@ -202,7 +227,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/fanta.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Fanta Narancs </h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
@@ -213,7 +238,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/fantazero.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Fanta Narancs Zero</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT </p>
@@ -224,7 +249,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/sprite.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Sprite</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 380FT</p>
@@ -235,7 +260,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/spritezero.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Sprite Zero</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 380FT</p>
@@ -247,7 +272,7 @@
         <!-- Termékek sora -->
 
         <br>
-        <h1 class="felirat">Gyümölcslevek</h1>
+        <h1 class="felirat2">Gyümölcslevek</h1>
         <br>
         
         <div class="row m-2">
@@ -255,7 +280,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cappymultivitamin.png"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Cappy Multivitamin</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
@@ -266,7 +291,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cappyoszibarack.png"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Cappy Őszibarack</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT </p>
@@ -277,7 +302,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cappyalma.png"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Cappy Alma</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
@@ -288,7 +313,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cappynarancs.png"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Cappy Narancs</h5>
                         <p class="card-text">500ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 400FT</p>
@@ -301,7 +326,7 @@
         <!-- Termékek sora -->
 
         <br>
-        <h1 class="felirat">Energiaitalok</h1>
+        <h1 class="felirat3">Energiaitalok</h1>
         <br>
 
         <div class="row m-2">
@@ -309,7 +334,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/classichell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell classic</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 300FT</p>
@@ -320,7 +345,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/watermelonhell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Watermelon</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 350FT </p>
@@ -331,7 +356,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/applehell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Apple </h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 350FT</p>
@@ -342,7 +367,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/grapehell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Grape</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 350FT</p>
@@ -358,7 +383,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t005">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/grapefruithell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Grapefruit</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 300FT</p>
@@ -370,7 +395,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t006">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cherryhell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Cherry</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 300FT</p>
@@ -381,7 +406,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t007">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/multihell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Multi+</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: >350FT</p>
@@ -392,7 +417,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t008">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/zerohell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell zero</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 300FT</p>
@@ -404,7 +429,7 @@
         <!-- Termékek sora -->
 
         <br>
-        <h1 class="felirat">Kávék</h1>
+        <h1 class="felirat4">Kávék</h1>
         <br>
 
         <div class="row m-2">
@@ -412,7 +437,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t001">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/cappuccinohell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Cappuccino</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -423,7 +448,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/espressohell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Dubble Espresso</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT </p>
@@ -434,7 +459,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/lattehell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Latte </h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -445,7 +470,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/coconuthell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Coconut</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -463,7 +488,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t005">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/vanillahell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Slim Vanilla</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -474,7 +499,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t006">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/caramelhell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Salted Caramel</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -485,7 +510,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t007">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/hazelnuthell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Slim Hazelnut</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -496,7 +521,7 @@
                 <div class="card" data-bs-toggle="modal" data-bs-target="#t008">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/ital/wallnuthell.webp"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-dark">
                         <h5 class="card-title">Hell Rum-Wallnut</h5>
                         <p class="card-text">250ml</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 450FT</p>
@@ -536,61 +561,69 @@
     </div>
 
     <div class="b-example-divider"></div>
-<footer class="bg-dark text-danger">
-    <div class="container">
-        <footer class="py-5 text-danger">
-            <div class="row">
-                <div class="col-6 col-md-2 mb-3" >
-                    <h5>Section</h5>
-                    <ul class="nav flex-column text-danger">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+    <footer class="bg-dark text-danger">
+        <div class="container">
+            <footer class="py-5 text-danger">
+                <div class="row">
+                                   <div class="col-6 col-md-2 mb-3" >
+                        <h5>Section</h5>
+                        <ul class="nav flex-column text-danger">
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Features</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Pricing</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>FAQs</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>About</span></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-6 col-md-2 mb-3 text-danger">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Features</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Pricing</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>FAQs</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>About</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Features</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Pricing</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>FAQs</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>About</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3 text-danger">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-danger">
+                    <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex text-danger">
+                        <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter" />
+                                </svg></a></li>
+                        <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook" />
+                                </svg></a></li>
                     </ul>
                 </div>
-
-                <div class="col-6 col-md-2 mb-3 text-danger">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-5 offset-md-1 mb-3 text-danger">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-danger">
-                <p>&copy; 2023 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex text-danger">
-                    <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter" />
-                            </svg></a></li>
-                    <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg></a></li>
-                    <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook" />
-                            </svg></a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-</footer>
+            </footer>
 
     <script>
         function nev(){
@@ -626,3 +659,9 @@
 </body>
 
 </html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Se
