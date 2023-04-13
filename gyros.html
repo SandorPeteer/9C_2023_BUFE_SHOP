@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEBSHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 5%;
+        }
+
+        .card img {
+            max-width: 100vh;
+            min-width: 16vh;
+            max-height: 60vh;
+            min-height: 40vh;
+            object-fit: cover;
+            transition: all 0.5s ease-out;
+        }
+
+        .card:hover {
+            box-shadow: rgba(243, 52, 38, 0.25) 0px 20px 50px -20px, rgba(253, 85, 85, 0.644) 0px 30px 60px -30px, rgba(26, 119, 211, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .card:hover img {
+            scale: 1.04;
+        }
+
+        .card-body {
+            background-color: rgb(255, 252, 250);
+            z-index: 1;
+            color: #ff2400
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: 33%;
+            border-radius: 100%;
+            border: 2px solid brown;
+        }
+
+        p,
+        label {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        li {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+        body{
+        background: linear-gradient( red , black);
+        }
+        footer{
+        background: dark
+        }
+        .kosarba{
+            border: red solid 2px;
+        }
+        .felirat1{
+            text-align: center;
+            color: #450303
+        }
+        .felirat2{
+            text-align: center;
+            color: #4e0303
+        }
+        .felirat3{
+            text-align: center;
+            color: #ff0000
+        }
+        .felirat4{
+            text-align: center;
+            color: #
+        }
+
+        .card-title{
+            color: #ed2939
+        }
+        .card-text{
+            color: #cd5c5c
+        }
+        span{
+            color: brown
+        }
+      
+    </style>
+
+</head>
+
+<body onload="nev()">
+
+
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="logo" src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/logokrp.png" alt="logo">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
+                            class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html" class="nav-link px-2 text-white" id="név"> JELENTKEZZ BE! </a></li>
+                    <li>
+                        <a href="#" class="nav-link px-2 text-white fa-solid fa-cart-shopping fa-2x">
+                            <span id="kosarban"
+                                class="top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-light" id="search-input"
+                        placeholder="Keresés..." aria-label="Search">
+                </form>
+
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2 bg-danger"
+                        onclick="window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html', '_self')">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <br>
+        <h1 class="felirat1">Gyrosok</h1>
+        <br>
+    
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/simagyros.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title ">Sima gyros </h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 1600FT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/sajtosgyros.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sajtos gyros</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 1770FT </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/csirkesgyros.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Csirkés gyros</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 1800FT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/vegagyros.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Vegán gyros</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 1790FT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Termékek sora -->
+
+        <div class="row m-2">
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/gyrostal.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sima gyros tál</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 2750FT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/sajtosgyrostal.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Sajtos gyros tál</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 2920FT </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/csirkesgyrostal.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Csirkés gyros tál</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 2950FT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/vegangyrostal.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Vegán gyros tál</h5>
+                        <p class="card-text"></p>
+                        <p class="text-bg-danger p-1 mx-2">ÁR: 2800FT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
