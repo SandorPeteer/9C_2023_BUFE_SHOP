@@ -268,3 +268,29 @@
                 </div>
             </div>
         </div>
+         <script>
+        function nev(){
+            const neve = localStorage.getItem("name");
+            console.log(neve);
+            if (neve != null) document.getElementById('név').innerHTML = neve;
+        }
+    </script>
+
+    <script>
+        // Termék keresés
+        var searchInput = document.querySelector('#search-input');
+        var productCards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', function () {
+            var searchTerm = searchInput.value.trim().toLowerCase();
+            productCards.forEach(function (card) {
+                var title = card.querySelector('.card-title').textContent.trim().toLowerCase();
+                var description = card.querySelector('.card-text').textContent.trim().toLowerCase();
+                if (title.indexOf(searchTerm) !== -1 || description.indexOf(searchTerm) !== -1) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });0
+    </script>
