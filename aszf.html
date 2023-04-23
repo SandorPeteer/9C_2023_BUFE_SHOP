@@ -1,1 +1,381 @@
+<!doctype html>
+<html lang="hu">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEBSHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 5%;
+        }
+
+        .card img {
+            max-width: 100vh;
+            min-width: 16vh;
+            max-height: 60vh;
+            min-height: 40vh;
+            object-fit: cover;
+            transition: all 0.5s ease-out;
+        }
+
+        .card:hover {
+            box-shadow: rgba(243, 52, 38, 0.25) 0px 20px 50px -20px, rgba(253, 85, 85, 0.644) 0px 30px 60px -30px, rgba(26, 119, 211, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .card:hover img {
+            scale: 1.04;
+        }
+
+        .card-body {
+            background-color: rgb(255, 252, 250);
+            z-index: 1;
+            color: #ff2400
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: 33%;
+            border-radius: 100%;
+            border: 2px solid brown;
+        }
+
+        p,
+        label {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        li {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+        body{
+        background: linear-gradient( red , black);
+        }
+        footer{
+        background: dark
+        }
+        .kosarba{
+            border: red solid 2px;
+        }
+        .felirat1{
+            color: #5c0404
+        }
+        .felirat21 {
+            color: #640c0c
+        }
+        .felirat2{
+            color: #fa1919
+        }
+        .felirat3{
+            color: #ff0000
+        }
+        .felirat4{
+            color: #ff0000
+        }
+
+        .card-title{
+            color: #ed2939
+        }
+        .card-text{
+            color: #cd5c5c
+        }
+        span{
+            color: brown
+        }
+      
+        .feliratc{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body onload="nev()">
+
+
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="logo" src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/logokrp.png" alt="logo">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
+                            class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html" class="nav-link px-2 text-white" id="név"> JELENTKEZZ BE! </a></li>
+                     <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/rolunk.html" class="nav-link px-2 text-white" id="név"> Rolunk </a></li>
+                    <li>
+                        <a href="#" class="nav-link px-2 text-white fa-solid fa-cart-shopping fa-2x">
+                            <span id="kosarban"
+                                class="top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-light" id="search-input"
+                        placeholder="Keresés..." aria-label="Search">
+                </form>
+
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2 bg-danger"
+                        onclick="window.open('https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html', '_self')">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <br>
+        <h1 class="feliratc">ÁSZF (Általános Szerződési Feltételek) </h1>
+        <br>
+        <h3 class="felirat1">1. Általános tudnivalók</h3>
+        <p class="felirat1">1.1. A jelen Általános Szerződési Feltétel (továbbiakban: ÁSZF) hatálya kiterjed a Magyarország területén nyújtott minden olyan elektronikus kereskedelmi szolgáltatásra, amely a Szolgáltatás igénybevételével történik. A megrendelés elektronikus úton megkötött szerződésnek minősül, amelyre a Polgári Törvénykönyvről szóló 2013. évi V. törvény, az elektronikus kereskedelmi szolgáltatások, az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről szóló 2001. évi CVIII. törvény vonatkozik. A Spártai Kft. tájékoztatja a Felhasználókat, hogy jelen szolgáltatásra, illetve a Felek közötti szerződésre a fogyasztó és a vállalkozás közötti szerződések részletes szabályairól szóló 45/2014. (II. 26.) Korm. rendelet 20. § rendelkezései nem vonatkoznak a 45/2014. (II. 26.) Korm. rendelet 29. §-a szerint, hiszen a megrendelt tételek romlandóak vagy minőségüket rövid ideig megőrző termékeknek számítanak, illetve olyan zárt csomagolású termék tekintetében sem, amely egészségvédelmi vagy higiéniai okokból az átadást követő felbontása után nem küldhető vissza.</p>
+        <p class="felirat1">1.2. A weboldalon keresztül történő rendelés során háromoldalú elektronikus szerződés jön létre a Felhasználó (továbbiakban: Megrendelő), a weboldalt üzemeltető Spártai Kft. (továbbiakban: Üzemeltető) és a kiszállítást lebonyolító étterem (továbbiakban: Étterem), továbbiakban Felek között. A szerződés tárgya a weboldalon keresztül Megrendelő által leadott megrendelés.</p>
+        <p class="felirat1">1.3. A weboldalon egy ingyenes szolgáltatás biztosít megrendelőinek.</p>
+        <p class="felirat1">1.4. A szerződés a Megrendelő által önként, a rendelési folyamat „Rendelés véglegesítése” lépésével jön létre. Az Üzemeltető és az Étterem közötti szerződés a háromoldalú szerződés előzménye, mely korábban megállapodási szerződésben megköttetett.</p>
+        <p class="felirat1">1.5. Az Üzemeltető által működtetett Étterem weboldala a Spártai.hu ételrendelő portál aloldala, bizonyos funkciók ezért a spártai.hu domain név alatt futnak.</p>
+        <p class="felirat1">1.6. Tekintettel arra, hogy az Üzemeltető a szolgáltatást egyidejűleg nagyszámú Felhasználó számára nyújtja azonos feltételekkel, fenntartja magának a szerződés feltételeinek egyoldalú módosítási jogát. Az Üzemeltető az egyoldalú módosításról a Felhasználókat e-mailben értesíti.</p>
+        <h3 class="felirat1">2. Regisztráció</h3>
+        <p class="felirat1">2.1. A megrendelés leadása minden esetben regisztrációhoz kötött.</p>
+        <p class="felirat1">2.2. A Megrendelő a rendeléshez szükséges adatait az Üzemeltetővel és az Étteremmel a regisztráció során osztja meg. A regisztráció során csak valós és hiteles adatokat adhat meg, a Felek rendelkezésére bocsátott információkért kizárólag a Megrendelő tartozik felelősséggel.</p>
+        <p class="felirat1">2.3. A regisztráció során Felhasználóknak a következő adatokat kötelező megadniuk:</p>
+        <ul>
+            <li class="felirat1">Teljes név</li>
+            <li class="felirat1">E-mail cím</li>
+            <li class="felirat1">Jelszó</li>
+            <li class="felirat1">Telefonszám</li>
+            <li class="felirat1">Szállítási cím (település, utca, házszám)</li>
+        </ul>
+        <p class="felirat1">A felsorolt adatokon kívül a Megrendelő a megrendelés leadása során megadhatja a SuperShop kártyájával kapcsolatos alábbi adatokat is annak érdekében, hogy a SuperShop pontfolyószámlán lévő pontokat a megrendelés értékének kiegyenlítése érdekében beváltása, illetve a megrendelt ételek értéke után SuperShop pontokat gyűjtsön:</p>
+        <ul>
+            <li class="felirat1">SuperShop kártya száma</li>
+            <li class="felirat1">SuperShop kártyán szereplő név</li>
+            <li class="felirat1">Születési dátum</li>
+        </ul>
+        <p class="felirat1">2.4. A Felhasználó regisztrációjával kijelenti, hogy elolvasta és elfogadja a weboldalon Adatvédelmi elveit és az ÁSZF-et.</p>
+        <h3 class="felirat21">3. Megrendelés menete</h3>
+        <p class="felirat21">3.1. A rendelés feltétele, hogy a Megrendelő rögzítse azt a címet, amelyre a rendelését kéri, valamint az, hogy a kiválasztott Étterem a megadott címre vállaljon házhozszállítást és a rendelés időpontjában nyitva legyen.</p>
+        <p class="felirat21">3.2. A rendelés feladása során az Éttermi kínálatból ki kell választani a megrendelni kívánt Terméket, melynek ára feltüntetésre kerül a Termék mellett.</p>
+        <p class="felirat21">3.3. Az Étterem adatlapján a Megrendelő tájékoztatást kap a kiszállítás idejéről, költségeiről, az étterem akcióiról, nyitva tartásáról, fizetési módokról, illetve a minimum rendelés összegéről. A minimum rendelés értékét minden esetben el kell érnie a megrendelés végösszegének.</p>
+        <p class="felirat21">3.4. A kiválasztott Termékeket a „Kosárba” gomb megnyomásával kerülnek a Megrendelő virtuális kosarába.</p>
+            <p class="felirat21">A virtuális kosár a weboldal jobb oldalán helyezkedik el, amelyben ellenőrizheti a belerakott Termékeket, azoknak a mennyiségét és árát.</p>
+            <p class="felirat21">A virtuális kosár „Megrendelem” gombjára kattintva lehetőség van újra ellenőrizni a megrendelni kívánt Termékeket, itt van lehetőség különböző akciók és ajándékok kiválasztására, illetve kuponkódok megadására, megjegyzés írni az Étterem számára. A Kosár tartalmát leellenőrizve ismét a „Megrendelem” gomb megnyomásával ellenőrizheti le/adhatja meg a Felhasználó személyes adatait, illetve itt van lehetőség kiválasztani a fizetési módot is.</p>
+            <p class="felirat21">Amennyiben a Megrendelő rendelkezik SuperShop törzsvásárlói kártyával akkor a kártyaszámának, a SuperShop kártyán szereplő nevének, valamint születési dátumának a megadásával jogosulttá válik arra, hogy a SuperShop pontfolyószámláján lévő SuperShop pontokat beváltsa a <éttermi weboldal címe>n keresztül leadott megrendelés értékének kiegyenlítése céljából, illetve a <éttermi weboldal címe>n keresztül történő megrendeléssel SuperShop pontokat gyűjtsön. A Megrendelő a SuperShop pontfolyószámláján lévő pontokat a teljes kosárérték összegéig beválthatja 1 pont = 1 Ft értékben, ha erre a pontfolyószámlájának egyenlege fedezetet nyújt. A Megrendelő az adott megrendelésnek a SuperShop pont beváltásával kiegyenlített (rész)összege után nem jogosult SuperShop pont gyűjtésére.</p>            
+        <p class="felirat21">3.5. A „Rendelés véglegesítése” gomb lenyomásával az Üzemeltető automatikusan eljuttatja a megrendelés információit az Éttermek felé. Az Étterem elkészíti az ételeket, és kiszállítja azokat. Az ételek kiszállítási ideje jellemzően 30-90 percen belül történik.</p>
+        <p class="felirat21">3.6. Az Üzemeltető a Megrendelő számára megrendelés után azonnal e-mailben visszaigazolást küld a megrendelés adatairól. </p>
+        <h3 class="felirat21">4. Fizetési lehetőségek, feltételek</h3>
+        <p class="felirat21">4.1. A megrendelés végösszegének kifizetése a weboldalon megjelölt fizetési módokon lehetséges. A rendelési értéket az Üzemeltetővel szerződéses kapcsolatban álló pénzügyi szolgáltató a Felhasználó által megadott bankkártya, SZÉP kártya számlára terheli, vagy kiszállításnál maga a Felhasználó készpénzben fizeti meg az étterem alkalmazottja számára.</p>
+        <p class="felirat21">4.2. A Megrendelő a megrendelt tételeket az Étteremnek a rendelése során megjelölt fizetőeszközzel köteles kifizetni a megrendelés kézbesítése során.</p>
+        <p class="felirat2">4.3. SimplePay bankkártyás fizetés esetén a Megrendelő elfogadja, hogy a(z) Spártai Kft. (3535 Miskolc, Körmöci utca 202.) által a(z) Spártai.hu felhasználói adatbázisában tárolt alábbi személyes adatok átadásra kerüljenek az OTP Mobil Kft. (1093 Budapest, Közraktár u. 302-323.), mint adatkezelő részére.</p>
+            <p class="felirat2">A továbbított adatok köre: vezetéknév, keresztnév, ország, telefonszám, e-mail cím. Az adattovábbítás célja: a Megrendelők részére történő ügyfélszolgálati segítségnyújtás, a tranzakciók visszaigazolása és a Megrendelők védelme érdekében végzett fraud-monitoring.</p>
+            <p class="felirat2">Az ismétlődő bankkártyás fizetés (továbbiakban: „Ismétlődő fizetés”) egy, a SimplePay által biztosított bankkártya elfogadáshoz tartozó funkció, mely azt jelenti, hogy a Megrendelő által a regisztrációs tranzakció során megadott bankkártyaadatokkal a jövőben újabb fizetéseket lehet kezdeményezni a bankkártyaadatok újbóli megadása nélkül. Az ismétlődő fizetés ún. „eseti hozzájárulásos” típusa minden tranzakció esetében a Megrendelő eseti jóváhagyásával történik, tehát, Ön valamennyi jövőbeni fizetésnél jóvá kell, hogy hagyja a tranzakciót.</p>
+            <p class="felirat2">A sikeres fizetés tényéről a Megrendelő minden esetben a hagyományos bankkártyás fizetéssel megegyező csatornákon keresztül értesítést kap.</p>
+            <p class="felirat2">Az Ismétlődő fizetés igénybevételéhez jelen nyilatkozat elfogadásával Ön hozzájárul, hogy a sikeres regisztrációs tranzakciót követően jelen webshopban (https://spártai.hu) Ön az itt található felhasználói fiókjából kezdeményezett későbbi fizetések a bankkártyaadatok újbóli megadása nélkül menjenek végbe.</p>
+            <p class="felirat2">Figyelem(!): a bankkártyaadatok kezelése a kártyatársasági szabályoknak megfelelően történik. A bankkártyaadatokhoz sem a Spártai Kft., sem a SimplePay nem fér hozzá.</p>
+            <p class="felirat2">A Spártai Kft. által tévesen vagy jogtalanul kezdeményezett ismétlődő fizetéses tranzakciókért közvetlenül a Spártai Kft. felel, a Spártai Kft. fizetési szolgáltatójával (SimplePay) szemben bármilyen igényérvényesítés kizárt.</p>
+        <p class="felirat2">4.4 Az online bankkártyás fizetési szándék esetén a Megrendelőknek lehetősége van a Barion rendszerén keresztül fizetni.</p>
+            <p class="felirat2">A bankkártya adatok a Spártai Kft.-hez nem jutnak el.</p>
+            <p class="felirat2">A Barion számára továbbított adatok köre: vezetéknév, keresztnév, e-mail cím. Az adattovábbítás célja az online bankkártyás fizetéshez szükséges kötelező adatok megadása. A Megrendelőknek a Barion terminálon - fizetési felületen - lehetősége van a további adatkezeléssel kapcsolatban nyilatkozni, valamint regisztrálni a Barion rendszerébe a jövőbeni online fizetések felgyorsításának érdekében. </p>
+            <p class="felirat2">A szolgáltatást nyújtó Barion Payment Zrt. a Magyar Nemzeti Bank felügyelete alatt álló intézmény, engedélyének száma: H-EN-I-10f64/2013.</p>
+        <h3 class="felirat3">5. Üzemeltető részéről vállalt kötelezettség</h3>
+        <p class="felirat3">5.1. A weboldalon keresztül leadott megrendelésekkel kapcsolatos panaszokat az Üzemeltető és az Étterem köteles kezelni. Az Üzemeltetőtől független panaszok esetén is segítséget nyújt az Üzemeltető annak érdekében, hogy a Megrendelő és az Étterem között fennálló vitás kérdés rendeződjön.</p>
+        <p class="felirat3">5.2. Az Üzemeltető köteles a Megrendelő megrendelését 10 percen belül telefonon, vagy elektronikus úton továbbítani az Étteremnek, egyúttal a megrendelés kézbesítéséhez szükséges minden információt átadni neki..</p>
+        <h3 class="felirat3">6. Étterem részéről vállalt kötelezettség</h3>
+        <p class="felirat3">6.1. A Étterem árgaranciát vállal arra, hogy a weboldalon közzétett árai megegyeznek az általa üzemeltetett vendéglátóhely áraival. Köteles tehát a Megrendelőt a bárhol máshol közölt legalacsonyabb áron, a tőle telhető legmagasabb színvonalon kiszolgálni.</p>
+        <p class="felirat3">6.2. A megrendeléseket az Üzemeltetőtől kapott rendelési adatoknak megfelelően, a weboldalon kérésére szereplő szállítási feltételeket betartva teljesíti. Az Étteremre visszavezethető hiányosságok esetén az Étterem beismeri hibáját, kárpótolja a Megrendelőt és megvédi az Üzemeltető jó hírét. A megrendelés kézbesítése során nem ösztönözheti a Megrendelőt arra, hogy a jövőbeni megrendeléseit az Üzemeltető szolgáltatásainak kihagyásával adja le.</p>
+        <p class="felirat3">6.3. Amennyiben az Étterem pillanatnyi kapacitása nem elegendő a Megrendelő kiszolgálására és előre láthatóan nem tudja teljesíteni a rendelést, azt köteles a Megrendelővel a teljesíthetetlen rendelés elfogadása előtt közölni.</p>
+        <p class="felirat3">6.4. Az Üzemeltető és az Étterem közötti együttműködés egyéb, Megrendelőre közvetlenül nem vonatkozó részleteiről külön megállapodás rendelkezik.</p>
+        <p class="felirat3">6.5. A szerződés tárgyát képező megrendelés részleteit az Üzemeltető eltárolja, vitás kérdésekben visszanézhetők.</p>
+        <h3 class="felirat3">7. Elállás</h3>
+        <p class="felirat3">7.1. A Megrendelő az általa megrendelt tételeket köteles az Étteremtől átvenni, amennyiben a megrendelés az általa megrendelt módon került kézbesítésre, mivel a Felhasználót elállási jog nem illeti meg sem az Üzemeltetővel sem az Étteremmel szemben, tekintettel arra, hogy a szolgáltatás igénybevétele a „Rendelés véglegesítése” gomb lenyomásával azonnal megtörténik, valamint arra, hogy az romlandó vagy minőségüket rövid ideig megőrző termékeknek minősülnek.</p>
+        <p class="felirat3">7.2. Megrendelés a rendelés véglegesítését követő 5 percen belül mondható fel a email címre küldött elektronikus levélben.</p>
+        <p class="felirat3">7.3. Amennyiben az Étterem nem a Megrendelő által megrendelt módon kézbesíti a megrendelést, a Megrendelő nem köteles azt átvenni, panasszal élhet.</p>
+        <h3 class="felirat3">8. Panaszkezelés</h3>
+        <p class="felirat3">8.1. A weboldalon keresztül leadott megrendelésekkel kapcsolatos panaszokat az Üzemeltető és az Étterem köteles kezelni. Az Üzemeltetőtől független panaszok esetén is segítséget nyújt az Üzemeltető annak érdekében, hogy a Megrendelő és az Étterem között fennálló vitás kérdés rendeződjön</p>
+        <p class="felirat3">8.2. Az esetleges reklamációkat a email címre várjuk. Ügyfélszolgálatunk a beérkezett panaszokat jellegüktől függően az illetékes kollégáknak, vagy az adott vendéglátónak továbbítja. Bár a problémák megoldásának ideje azok forrásától függ, az ügyfélszolgálat csapata mégis törekszik rá, hogy minél hamarabb el tudja hárítani a kellemetlenséget. Az azonnali megoldást igénylő problémát haladéktalanul megvizsgálja és lehetőség szerint azonnal orvosolja, minden más esetben pedig 5 munkanapon belül válaszol a felmerült panaszra.</p>
+        <p class="felirat3">8.3. Amennyiben nem vagy elégedett az Ügyfélszolgálatunk által nyújtott panaszkezeléssel, úgy a Nemzeti Fogyasztóvédelmi Hatósághoz fordulhatsz jogorvoslatért, illetve a területileg illetékes Békéltető Testülethez fordulhatsz.</p>
+        <h3 class="felirat4">9. Személyes adatok kezelése</h3>
+        <p class="felirat4">9.1. A Felhasználó személyes adatainak kezelésére vonatkozó részletes szabályokat az Adatvédelmi tájékoztató tartalmazza.</p>
+        <p class="felirat4">9.2. Az Üzemeltető az üzemeltető ügyfélszolgálati telefonszámokra érkező hívásokról, a Telefonáló és az ügyfélszolgálat közötti telefonbeszélgetésekről, valamint az ügyfélszolgálat által indított kimenő hívásokról panaszkezelés és teljes körű ügyfélkiszolgálás céljából hangfelvételt készít, amelyet visszakereshető módon 60 napig megőriz, 3 évig tárol.</p>
+        <p class="felirat4">9.3. A hívásokat az Üzemeltető rögzíti, azonban előfordulhat, hogy műszaki okok miatt bizonyos beszélgetések nem kerülnek rögzítésre.</p>
+        <p class="felirat4">9.4. Amennyiben a hívó fél a hangrögzítéshez nem járul hozzá, akkor az adott ügyet csak írott formában e-mailben a e-mail címen áll módjában intézni.</p>
+        <p class="felirat4">9.5. A telefonos beszélgetésről rögzített hanganyagnak a hívó kérésére és a jogosultság ellenőrzését követően, a megőrzési időn belül a telefonbeszélgetés visszahallgatását biztosítjuk. A hanganyagot egyszer, díjmentesen a Telefonáló rendelkezésére bocsátjuk.</p>
+        <p class="felirat4">9.6. A beszélgetésekről külön hangfájl készül. A hangfájl azonosító száma a következőkből áll: telefonszám (amiről a hívást kezdeményezte) + dátum (amikor a hívás megtörtént).</p>
+        <p class="felirat4">9.7. Telefononos ügyfélszolgálatunkra beérkező panaszokról a Telefonáló beleegyezésével jegyzőkönyvet nem készítünk. Ügyfélszolgálatunk felé e-mailen beérkező, azonnal orvosolható panaszokról jegyzőkönyvet nem készítünk.</p>
+        <h3 class="felirat4">10. SuperShop kártya használata</h3>
+        <p class="felirat4">10.1. Az Üzemeltető szolgáltató partnerként csatlakozott a SuperShop Törzsvásárlói Programhoz Üzemeltető: SuperShop Kft.; székhely: 1095 Budapest, Mester utca 30-32. 4. és 5. em.; cégjegyzékszám: 01-09-674945; adószám: 11756114-2-43; SuperShop Ügyfélszolgálat levelezési cím: 1476 Budapest, Pf. 249.; e-mail cím: ugyfelszolgalat@supershop.hu; telefonszám: +36 1 481 6000 (munkanapokon 8:00-17:00) (a továbbiakban SuperShop).</p>
+            <p class="felirat4">A SuperShop Törzsvásárlói Program keretén belül az Üzemeltető lehetőséget biztosít a Megrendelőknek arra, hogy a Fincsibufe.hu-on keresztül megrendelés során a megrendelt termékek után SuperShop pontokat gyűjtsön, amelyeket a rendszer a fizetést, átvételt követő 7 munkanapon belül jóváír a Megrendelő SuperShop pontfolyószámláján, továbbá a megrendelés ellenértékének kiegyenlítése érdekében SuperShop pontokat váltson be.</p>
+            <p class="felirat4">A Megrendelő a SuperShop kártyáját a Fincsibufe.hu-n a megrendelés véglegesítését megelőzően, a rendelési felületen tudja használni (azaz, az adott vásárlással összefüggésben SuperShop pontbeváltást itt kezdeményezhet) abban az esetben, ha a rendelési felületen az online bankkártyás vagy online SZÉP kártyás fizetési módot választja.</p>
+        <p class="felirat4">10.2. SuperShop pontfolyószámlán lévő pontok beváltása a Fincsibufe.hu-n keresztül:</p>
+            <p class="felirat4">A SuperShop pontfolyószámlán lévő pontok beváltására kizárólag akkor van lehetőség, ha a Megrendelő a rendelési felületen az online bankkártyás vagy az online SZÉP kártyás fizetési módot választja.</p>
+            <p class="felirat4">A kosár tartalmának ellenőrzése után a Megrendelő tájékoztató jellegű információt lát arról, hogy a megrendelésének összértékével hány SuperShop pont gyűjthető. A „Van SuperShop kártyám” feliratra kattintva lehetséges a SuperShop törzsvásárlói kártyaadatok megadni, amennyiben a Megrendelő rendelkezik SuperShop kártyával.</p>
+            <p class="felirat4">Az azonosításhoz szükséges adatokhoz a következő adatokat szükséges megadni:</p>
+            <ul>
+                <li class="felirat4">SuperShop kártya száma</li>
+                <li class="felirat4">SuperShop kártyán szereplő név</li>
+                <li class="felirat4">Születési dátum (ÉÉÉÉ.HH.NN.) formátumban.</li>
+            </ul>
+            <p class="felirat4">A Megrendelő a helyes adatok megadása után tájékoztatást kap pontegyenlegéről. A beírt helyes adatok után a „Hozzáad” gomb megnyomásával a SuperShop pontok gyűjtésének folyama sikeresen megkezdődik. A beváltani kívánt pontok mértékét pontosan meg tudja adni a „Szeretnél pontot beváltani?” felirat alatt megtalálható sávban, a megrendelés véglegesítését megelőzően a „Beváltás” gomb megnyomásával, a rendelési felületen.</p>
+            <p class="felirat4">A Megrendelő a SuperShop pontfolyószámláján lévő egész pontokat a kosárérték 99,9%-áig kerekítve válhatja be 1 pont = 1 Ft értékben, ha erre a pontfolyószámlájának egyenlege fedezetet nyújt. A Megrendelő az adott megrendelésnek a SuperShop pont beváltásával kiegyenlített (rész)összege után nem jogosult SuperShop pont gyűjtésére.</p>
+        <p class="felirat4">10.3. SuperShop pontok jóváírása a SuperShop pontfolyószámlán:</p>
+            <p class="felirat4">A Megrendelő minden teljes 200 Ft megrendelési érték után jogosult 1 SuperShop pont gyűjtésére függetlenül attól, hogy milyen fizetési módot választott a megrendelés során. A SuperShop pontok meghatározása a kosár összértéke alapján történik, tehát beleszámít a megrendelt ételek ára, a kiszállítási költség és a csomagolási díj is. A pontszámítás során kizárólag egész pont gyűjthető és beváltható.</p>
+            <p class="felirat4">A Fincsibufe.hu-n keresztül történő megrendelések után a pontok jóváírására csak az alábbi feltételek együttes megléte esetén kerül sor:</p>
+            <ul>
+                <li class="felirat4">A Megrendelő a „Beváltás” gombot megnyomva nyilatkozik, arról, hogy pontokat szeretne beváltani</li>
+                <li class="felirat4">A megrendelés során kért jóváírható pontok a megrendelés elküldését követően ideiglenes jóváírásra kerülnek a Megrendelő SuperShop pontfolyószámláján, tekintettel arra, hogy online megrendelés esetén a megrendelés, a fizetés és a termékek átvétele térben és időben nem egyszerre történik. Az ideiglenesen beváltott pontok a SuperShop pontfolyószámlán, a megrendelés elküldését követően zárolásra kerülnek, ami azt jelenti, hogy a Megrendelő az ideiglenesen jóváírt és egyben zárolt pontokat mindaddig nem tudja felhasználni a további vásárlásai során, amíg a zárolás feloldásra nem kerül. A zárolás feloldására abban az esetben kerül sor, ha a Megrendelő a megrendelésének értékét kifizette, illetve megrendelését átvette. Az átvételt követően 7 munkanapon belül kerülnek a zárolt pontok feloldásra és jóváírásra.</li>
+                <li class="felirat4">A Megrendelő megrendelésének értékét kifizette</li>
+                <li class="felirat4">A Megrendelő a megrendelt termékeket átvette</li>
+                <li class="felirat4">A Megrendelő hozzájárult az adatainak a továbbításához a SuperShop részére, valamint azok összevetéséhez a SuperShop adatbázis adataival, és ezen adatai egyeznek a SuperShop adatbázisban szereplő adatokkal. Ha a Megrendelő az adatainak a SuperShop felé történő továbbításához és az Üzemeltető általi kezeléséhez, illetve tárolásához nem járul hozzá, akkor a megrendelés alapján a megrendelés ugyan érvényesen létrejön, azonban a SuperShop ponttranzakció nem valósul meg.</li>
+            </ul>
+            <p class="felirat4">A fenti feltételek együttes teljesülése esetén az Üzemeltető 7 munkanapon belül értesíti a SuperShop-ot, hogy az ideiglenes pontok zárolása megszüntethető.</p>
+        <p class="felirat4">10.4. Amennyiben a vásárlás valamilyen oknál fogva meghiúsul, a beváltani kívánt pont(ok) zárolása feloldásra kerül(nek).</p>
+        <p class="felirat4">10.5. A SuperShop pontgyűjtés és pontbeváltás más hasonló metóduson alapuló pontgyűjtő szolgáltatásaival nem összevonható.</p>
+        <p class="felirat4">10.6. A megjelenített pontegyenleg adatok pusztán tájékoztató jellegűek, bármely vita esetén a pontegyenleg vonatkozásában a SuperShop nyilvántartása az irányadó.</p>
+        <p class="felirat4">10.7. Sem a SuperShop, sem a SuperShop Partnerek nem felelnek a kártyákkal kapcsolatos visszaélésekért, valamint a kártya elvesztése, ellopása, megsemmisülése, megsérülése következtében keletkezett károkért, kivéve, ha azok a SuperShop vagy szerződött partnerei (illetve azok munkatársai, alvállalkozói) szándékos magatartására vezethetők vissza.</p>
+        <p class="felirat4">10.8. A SuperShop kártya használatára, elvesztésére, cseréjére, illetve a SuperShop kártyának a Fincsibufe.hu-on kívüli felhasználására a SuperShop Program Részvételi Feltételei irányadók, melynek rendelkezéseit a Megrendelő a SuperShop kártya igénylésekor magára nézve kötelező érvényűnek fogadott el. A Részvételi Feltételek a www.supershop.hu</p>
+
+    </main>
+
+    <div class="b-example-divider"></div>
+    <footer class="bg-dark text-danger">
+        <div class="container">
+            <footer class="py-5 text-danger">
+                <div class="row">
+                                   <div class="col-6 col-md-2 mb-3" >
+                        <h5>Section</h5>
+                        <ul class="nav flex-column text-danger">
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Features</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>Pricing</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>FAQs</span></a></li>
+                            <li class="nav-item mb-2 text-danger"><a href="#" class="nav-link p-0"><span>About</span></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-6 col-md-2 mb-3 text-danger">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Features</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Pricing</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>FAQs</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>About</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Home</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Features</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>Pricing</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>FAQs</span></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><span>About</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3 text-danger">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-danger">
+                    <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex text-danger">
+                        <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter" />
+                                </svg></a></li>
+                        <li class="ms-3 text-danger"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+    <script>
+        function nev(){
+            const neve = localStorage.getItem("name");
+            console.log(neve);
+            if (neve != null) document.getElementById('név').innerHTML = neve;
+        }
+    </script>
+
+    <script>
+        // Termék keresés
+        var searchInput = document.querySelector('#search-input');
+        var productCards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', function () {
+            var searchTerm = searchInput.value.trim().toLowerCase();
+            productCards.forEach(function (card) {
+                var title = card.querySelector('.card-title').textContent.trim().toLowerCase();
+                var description = card.querySelector('.card-text').textContent.trim().toLowerCase();
+                if (title.indexOf(searchTerm) !== -1 || description.indexOf(searchTerm) !== -1) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });0
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
