@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEBSHOP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
         integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
 
@@ -85,47 +88,55 @@
             vertical-align: -.125em;
             fill: currentColor;
         }
-        body{
-        background: linear-gradient( red , black);
+
+        body {
+            background: linear-gradient(red, black);
         }
-        footer{
-        background: dark
+
+        footer {
+            background: dark
         }
-        .kosarba{
+
+        .kosarba {
             border: red solid 2px;
         }
-        .felirat1{
+
+        .felirat1 {
             text-align: center;
             color: #450303
         }
-        .felirat2{
+
+        .felirat2 {
             text-align: center;
             color: #4e0303
         }
-        .felirat3{
+
+        .felirat3 {
             text-align: center;
             color: #ff0000
         }
-        .felirat4{
+
+        .felirat4 {
             text-align: center;
             color: #
         }
 
-        .card-title{
+        .card-title {
             color: #ed2939
         }
-        .card-text{
+
+        .card-text {
             color: #cd5c5c
         }
-        span{
+
+        span {
             color: brown
         }
-      
     </style>
 
 </head>
 
-<body onload="nev()">
+<body onload="nev(),ar()">
 
 
     <header class="p-3 text-bg-dark">
@@ -140,9 +151,12 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/"
                             class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html" class="nav-link px-2 text-white" id="név"> JELENTKEZZ BE! </a></li>
-                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/rolunk/rolunk.html" class="nav-link px-2 text-white" id="mi"> Rolunk</a></li>
-                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/aszf" class="nav-link px-2 text-white" id="mi"> ASZF</a></li>
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/login.html"
+                            class="nav-link px-2 text-white" id="név"> JELENTKEZZ BE! </a></li>
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/rolunk/rolunk.html"
+                            class="nav-link px-2 text-white" id="mi"> Rolunk</a></li>
+                    <li><a href="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/aszf" class="nav-link px-2 text-white"
+                            id="mi"> ASZF</a></li>
                     <li>
                         <a href="#" class="nav-link px-2 text-white fa-solid fa-cart-shopping fa-2x">
                             <span id="kosarban"
@@ -172,18 +186,18 @@
         <br>
         <h1 class="felirat1">Hamburgerek</h1>
         <br>
-    
+
         <!-- Termékek sora -->
 
         <div class="row m-2">
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#bbg_hamburger">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/bbq.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title ">BBG Hamburger </h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 1560FT</p>
+                        <p id="BBG_Hamburger" class="text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -194,7 +208,7 @@
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Duplahúsos Hamburger</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 2670FT </p>
+                        <p id="Duplahúsos_Hamburger" class="text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -270,29 +284,83 @@
                 </div>
             </div>
         </div>
-         <script>
-        function nev(){
-            const neve = localStorage.getItem("name");
-            console.log(neve);
-            if (neve != null) document.getElementById('név').innerHTML = neve;
-        }
-    </script>
 
-    <script>
-        // Termék keresés
-        var searchInput = document.querySelector('#search-input');
-        var productCards = document.querySelectorAll('.card');
 
-        searchInput.addEventListener('input', function () {
-            var searchTerm = searchInput.value.trim().toLowerCase();
-            productCards.forEach(function (card) {
-                var title = card.querySelector('.card-title').textContent.trim().toLowerCase();
-                var description = card.querySelector('.card-text').textContent.trim().toLowerCase();
-                if (title.indexOf(searchTerm) !== -1 || description.indexOf(searchTerm) !== -1) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });0
-    </script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bbg_hamburger" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">BBG_Hamburger</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="javascript:void(0)">
+                            <legend>FELTÉTEK:</legend>
+                            <input type="checkbox" name="cucc" id="ketchup">
+                            <label for="ketchup">KETCHUP</label><br>
+                            <input type="checkbox" name="cucc" id="mustár">
+                            <label for="mustár">MUSTÁR</label><br>
+                            <input type="checkbox" name="cucc" id="majonéz">
+                            <label for="majonéz">MAJONÉZ</label><br>
+                        </form>
+                        <hr>
+                        <p>AKTUÁLIS ÁR</p>
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                        <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+        <script>
+            var BBG_Hamburger = 1570;
+            var Duplahúsos_Hamburger = 2670;
+            var Chedar_Chesse_Hambuger = 3170;
+
+            function ar() {
+                document.getElementById('BBG_Hamburger').innerHTML = "ÁR: " + BBG_Hamburger + " Ft";
+                document.getElementById('Duplahúsos_Hamburger').innerHTML = "ÁR: " + Duplahúsos_Hamburger + " Ft";
+            }
+
+            function nev() {
+                const neve = localStorage.getItem("name");
+                console.log(neve);
+                if (neve != null) document.getElementById('név').innerHTML = neve;
+            }
+
+            function kosarba() {
+
+            }
+
+            // Termék keresés
+            var searchInput = document.querySelector('#search-input');
+            var productCards = document.querySelectorAll('.card');
+
+            searchInput.addEventListener('input', function () {
+                var searchTerm = searchInput.value.trim().toLowerCase();
+                productCards.forEach(function (card) {
+                    var title = card.querySelector('.card-title').textContent.trim().toLowerCase();
+                    var description = card.querySelector('.card-text').textContent.trim().toLowerCase();
+                    if (title.indexOf(searchTerm) !== -1 || description.indexOf(searchTerm) !== -1) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }); 0
+        </script>
+
+    </main>
+</body>
+
+</html>
