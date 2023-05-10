@@ -176,6 +176,8 @@
         <!-- Termékek sora -->
 
         <div class="row m-2">
+
+        <!-- TERMÉK 1 -->
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/marscsoki.jpg"
@@ -184,6 +186,58 @@
                         <h5 class="card-title ">Mars csokoládé</h5>
                         <p class="card-text">51g</p>
                         <p class="text-bg-danger p-1 mx-2">ÁR: 240FT</p>
+                    </div>
+                </div>
+            </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Mars_csoki" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="mars_csoki_BackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="coca_cola_BackdropLabel">Mars_csoki</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="javascript:void(0)">
+                                        <legend>opciók:</legend>
+                                        <input type="checkbox" name="cucc" id="hűtés">
+                                        <label for="hűtés">hűtés</label><br>
+                                    </form>
+                                    <hr>
+                                    <p class="Coca_cola">ÁR</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                    <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- Modal -->
+            <div class="modal fade" id="coca_cola" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="coca_cola_BackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="coca_cola_BackdropLabel">coca_cola</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="javascript:void(0)">
+                                <legend>opciók:</legend>
+                                <input type="checkbox" name="cucc" id="hűtés">
+                                <label for="hűtés">hűtés</label><br>
+                            </form>
+                            <hr>
+                            <p class="Coca_cola">ÁR</p>
+                            <br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                            <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -475,11 +529,57 @@
             </footer>
 
     <script>
+
+            var Mars_csoki = 240;
+            var Sport_csoki = 230;
+            var Twix_csoki = 230;
+            var Snickers_csoki = 240;
+            var Negro_cukor = 540;
+            var Extra_negro_cukor = 680;
+            var Mentolos_negro_cukor = 270;
+            var Feketeribizlis_negro_cukor = 270;
+            var Pringles_natur = 1350;
+            var Pringles_tejfol_hagyma = 1350;
+            var Mogyi_nagy = 1400;
+            var Mogyi_kis = 820;
+            var Sajtos_kreker = 1200;
+            var Pizza_kreker = 1200;
+            var Sos_kreker = 1200;
+            var Makos_szezam_kreker = 1200;
+
+
+
         function nev(){
             const neve = localStorage.getItem("name");
             console.log(neve);
             if (neve != null) document.getElementById('név').innerHTML = neve;
         }
+        function ar() {
+                    const Mars_csoki_ar = document.getElementsByClassName("Mars_csoki");
+                    for (let i = 0; i < Mars_csoki_ar.length; i++) {
+                        Mars_csoki_ar[i].innerHTML = "ÁR: " + Mars_csoki + " Ft";
+                    }
+                }
+
+                document.getElementById('Mars_csoki').innerHTML = "ÁR: " + coca_cola_light + " Ft";
+                document.getElementById('Sport_csoki').innerHTML = "ÁR: " + coca_cola_zero + " Ft";
+                document.getElementById('Twix_csoki').innerHTML = "ÁR: " + coca_cola_cherry + " Ft";
+                document.getElementById('Snickers_csoki').innerHTML = "ÁR: " + fanta_narancs + " Ft";
+                document.getElementById('Negro_cukor').innerHTML = "ÁR: " + fanta_narancs_zero + " Ft";
+                document.getElementById('Extra_negro_cukor').innerHTML = "ÁR: " + sprite + " Ft";
+                document.getElementById('Mentolos_negro_cukor').innerHTML = "ÁR: " + sprite_zero + " Ft";
+                document.getElementById('Feketeribizlis_negro_cukor').innerHTML = "ÁR: " + cappy_multivitamin + " Ft";
+                document.getElementById('Pringles_natur').innerHTML = "ÁR: " + cappy_őszibarack + " Ft";
+                document.getElementById('Pringles_tejfol_hagyma').innerHTML = "ÁR: " + cappy_alma + " Ft";
+                document.getElementById('Mogyi_nagy').innerHTML = "ÁR: " + cappy_narancs + " Ft";
+                document.getElementById('Mogyi_kis').innerHTML = "ÁR: " + hell_classic + " Ft";
+                document.getElementById('Sajtos_kreker').innerHTML = "ÁR: " + hell_watermelon + " Ft";
+                document.getElementById('Pizza_kreker').innerHTML = "ÁR: " + hell_apple + " Ft";
+                document.getElementById('Sos_kreker').innerHTML = "ÁR: " + hell_grape + " Ft";
+                document.getElementById('Makos_szezam_kreker').innerHTML = "ÁR: " + hell_grapefruit + " Ft";
+
+
+                
     </script>
 
     <script>
