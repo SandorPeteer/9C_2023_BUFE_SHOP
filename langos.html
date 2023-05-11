@@ -125,7 +125,7 @@
 
 </head>
 
-<body onload="nev()">
+<body onload="nev(),ar()">
 
 
     <header class="p-3 text-bg-dark">
@@ -177,99 +177,327 @@
 
         <div class="row m-2">
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sima_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/sima.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title ">Sima Lángos </h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 1000FT</p>
+                        <p class="Sima_langos text-bg-danger p-1 mx-2">...</p>
+                    </div>
+                </div>
+        <!-- Modal -->
+            <div class="modal fade" id="sima_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="sima_langos_BackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="sima_langos_BackdropLabel">Sima lángos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="javascript:void(0)">
+                                <legend>opciók:</legend>
+                                <input type="checkbox" name="cucc" id="fokhagyma">
+                                <label for="hűtés">fokhagyma</label><br>
+                            </form>
+                            <hr>
+                            <p class="Sima_langos">ÁR</p>
+                            <br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                            <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+            </div>
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#extra_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/extra.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Extra Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 1700FT </p>
+                        <p class="Extra_Langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
+                    <!-- Modal -->
+                <div class="modal fade" id="extra_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="extra_langos_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="extra_langos_BackdropLabel">Extra Lángos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#orias_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/orias.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Óriás Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 3900FT</p>
+                        <p class="Orias_langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
+                                <!-- Modal -->
+                <div class="modal fade" id="orias_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="orias_langos_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="orias_langos_BackdropLabel">Óriás Lángos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#magyaros_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/magyar.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Magyaros Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 2000FT</p>
+                        <p class="Magyaros_langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
         </div>
+                                <!-- Modal -->
+                <div class="modal fade" id="magyaros_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="magyaros_langos_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="magyaros_langos_BackdropLabel">Magyaros Lángos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
         <!-- Termékek sora -->
 
         <div class="row m-2">
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#toltot_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/toltot.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Töltöt Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 3000 </p>
+                        <p class="Toltot_langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
+
+                     <!-- Modal -->
+                <div class="modal fade" id="toltot_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="toltot_langos_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="toltot_langos_BackdropLabel">Töltöt Lángos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#krumplis_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/krumpli.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Krumplis Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 1370FT </p>
+                        <p class="Krumplis_langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="krumplis_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="krumplis_langos_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="krumplis_langos_BackdropLabel">Krumplis Lángos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#krumplis_extra">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/krumpliextra.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Krumplis (EXTRA)</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 1800FT</p>
+                        <p class="Krumplis_extra text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="krumplis_extra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="krumplis_extra_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="krumplis_extra_BackdropLabel">Krumplis Extra</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#ketchupos_langos">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/ketchup.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Ketchupos Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 800FT</p>
+                        <p class="Ketchupos_langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
         </div>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="ketchupos_langos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="ketchupos_langos_BackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="ketchupos_langos_BackdropLabel">Ketchupos Langos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="javascript:void(0)">
+                                    <legend>opciók:</legend>
+                                    <input type="checkbox" name="cucc" id="fokhagyma">
+                                    <label for="hűtés">fokhagyma</label><br>
+                                </form>
+                                <hr>
+                                <p class="Sima_langos">ÁR</p>
+                                <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous">
+                </script>
          <script>
         function nev(){
             const neve = localStorage.getItem("name");
@@ -279,6 +507,30 @@
     </script>
 
     <script>
+
+        var Sima_langos = 1000;
+        var Extra_langos = 1700;
+        var Orias_langos = 3900;
+        var Magyaros_langos = 2000;
+        var Toltot_langos = 3000;
+        var Krumplis_langos = 1370;
+        var Krumplis_extra = 1800;
+        var Ketchupos_langos = 800;
+
+
+        function nev() {
+                    const neve = localStorage.getItem("name");
+                    console.log(neve);
+                    if (neve != null) document.getElementById('név').innerHTML = neve;
+                }
+        function ar(){
+            const Sima_langos_ar = document.getElementsByClassName("Sima_langos");
+                    for (let i = 0; i < Sima_langos_ar.length; i++) {
+                        Sima_langos_ar[i].innerHTML = "ÁR: " + Sima_langos + " Ft";
+        }
+        }
+
+
         // Termék keresés
         var searchInput = document.querySelector('#search-input');
         var productCards = document.querySelectorAll('.card');
@@ -295,4 +547,3 @@
                 }
             });
         });0
-    </script>
