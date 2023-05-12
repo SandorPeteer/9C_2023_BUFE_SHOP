@@ -125,7 +125,7 @@
 
 </head>
 
-<body onload="nev()">
+<body onload="nev(), ar()">
 
 
     <header class="p-3 text-bg-dark">
@@ -177,7 +177,7 @@
 
         <div class="row m-2">
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sima_gyros">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/simagyros.webp"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -187,8 +187,34 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="sima_gyros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="sima_gyros_BackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="sima_gyros_BackdropLabel">sima_gyros</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="javascript:void(0)">
+                                <legend>opciók:</legend>
+                                <input type="checkbox" name="cucc" id="csípős szósz">
+                                <label for="csípős szósz">csípős szósz</label><br>
+                            </form>
+                            <hr>
+                            <p class="sima_gyros">ÁR</p>
+                            <br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                            <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sajtos_gyros">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/sajtosgyros.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -198,8 +224,34 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="sajtos_gyros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="sajtos_gyros_BackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="sajtos_gyros_BackdropLabel">sajtos_gyros</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="javascript:void(0)">
+                                <legend>opciók:</legend>
+                                <input type="checkbox" name="cucc" id="csípős szósz">
+                                <label for="csípős szósz">csípős szósz</label><br>
+                            </form>
+                            <hr>
+                            <p class="sajtos_gyros">ÁR</p>
+                            <br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                            <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#csierkés_gyros">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/csirkesgyros.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -209,8 +261,34 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="csierkés_gyros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="csierkés_gyros_BackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="csierkés_gyros_BackdropLabel">csierkés_gyros</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="javascript:void(0)">
+                                <legend>opciók:</legend>
+                                <input type="checkbox" name="cucc" id="csípős szósz">
+                                <label for="csípős szósz">csípős szósz</label><br>
+                            </form>
+                            <hr>
+                            <p class="csierkés_gyros">ÁR</p>
+                            <br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                            <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#vegan_gyros">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/vegagyros.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -221,12 +299,38 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="vegan_gyros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="vegan_gyros_BackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="vegan_gyros_BackdropLabel">vegan_gyros</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0)">
+                        <legend>opciók:</legend>
+                        <input type="checkbox" name="cucc" id="csípős szósz">
+                        <label for="csípős szósz">csípős szósz</label><br>
+                    </form>
+                    <hr>
+                    <p class="csierkés_gyros">ÁR</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                    <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!-- Termékek sora -->
 
         <div class="row m-2">
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sima_gyros_tál">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/gyrostal.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -236,8 +340,35 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+        <div class="modal fade" id="sima_gyros_tál" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="sima_gyros_tál_BackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sima_gyros_tál_BackdropLabel">sima_gyros_tál</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0)">
+                        <legend>opciók:</legend>
+                        <input type="checkbox" name="cucc" id="csípős szósz">
+                        <label for="csípős szósz">csípős szósz</label><br>
+                    </form>
+                    <hr>
+                    <p class="sima_gyros_tál">ÁR</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                    <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t002">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sajtos_gyros_tál">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/sajtosgyrostal.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -247,8 +378,34 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+        <div class="modal fade" id="sajtos_gyros_tál" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="sajtos_gyros_tál_BackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sajtos_gyros_tál_BackdropLabel">sajtos_gyros_tál</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0)">
+                        <legend>opciók:</legend>
+                        <input type="checkbox" name="cucc" id="csípős szósz">
+                        <label for="csípős szósz">csípős szósz</label><br>
+                    </form>
+                    <hr>
+                    <p class="sajtos_gyros_tál">ÁR</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                    <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                </div>
+            </div>
+        </div>
+    </div>
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t003">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#csirkés_gyros_tál">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/csirkesgyrostal.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -257,9 +414,34 @@
                         <p class="text-bg-danger p-1 mx-2">ÁR: 2950FT</p>
                     </div>
                 </div>
+            </div><!-- Modal -->
+            <div class="modal fade" id="csirkés_gyros_tál" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="csirkés_gyros_tál_BackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="csirkés_gyros_tál_BackdropLabel">csirkés_gyros_tál</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="javascript:void(0)">
+                            <legend>opciók:</legend>
+                            <input type="checkbox" name="cucc" id="csípős szósz">
+                            <label for="csípős szósz">csípős szósz</label><br>
+                        </form>
+                        <hr>
+                        <p class="csirkés_gyros_tál">ÁR</p>
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                        <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                    </div>
+                </div>
             </div>
+        </div>
             <div class="col-sm-3">
-                <div class="card" data-bs-toggle="modal" data-bs-target="#t004">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#vegán_gyros_tál">
                     <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/etel/meleg/vegangyrostal.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
@@ -270,6 +452,32 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="vegán_gyros_tál" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="vegán_gyros_tál_BackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="vegán_gyros_tál_BackdropLabel">vegán_gyros_tál</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0)">
+                        <legend>opciók:</legend>
+                        <input type="checkbox" name="cucc" id="csípős szósz">
+                        <label for="csípős szósz">csípős szósz</label><br>
+                    </form>
+                    <hr>
+                    <p class="vegán_gyros_tál">ÁR</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
+                    <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                </div>
+            </div>
+        </div>
+    </div>
         <footer class="bg-dark text-danger">
     <div class="container">
         <footer class="py-5 text-danger">
@@ -335,3 +543,7 @@
         </footer>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+</body>
