@@ -7,10 +7,12 @@
     <title>WEBSHOP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
         integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk&display=swap');
 
@@ -576,20 +578,13 @@
             </footer>
 
 
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
                 crossorigin="anonymous">
                 </script>
          <script>
-        function nev(){
-            const neve = localStorage.getItem("name");
-            console.log(neve);
-            if (neve != null) document.getElementById('név').innerHTML = neve;
-        }
-    </script>
 
-    <script>
-
+       
         var Negy_sajtos_pizza = 1000;
         var Csipos_pizza = 1700;
         var Gombas_pizza = 3900;
@@ -600,13 +595,53 @@
         var Sonkas_kukoricas = 800;
 
 
-        function ar(){
-            const Negy_sajtos_pizza_ar = document.getElementsByClassName("Negy_sajtos_pizza");
+
+        function nev(){
+            const neve = localStorage.getItem("name");
+            console.log(neve);
+            if (neve != null) document.getElementById('név').innerHTML = neve;
+        }
+        function ar() {
+                    const Negy_sajtos_pizza_ar = document.getElementsByClassName("Negy_sajtos_pizza");
                     for (let i = 0; i < Negy_sajtos_pizza_ar.length; i++) {
                         Negy_sajtos_pizza_ar[i].innerHTML = "ÁR: " + Negy_sajtos_pizza + " Ft";
-        }
-        }
+                    }
 
+                    const Csipos_pizza_ar = document.getElementsByClassName("Csipos_pizza");
+                    for (let i = 0; i < Csipos_pizza_ar.length; i++) {
+                        Csipos_pizza_ar[i].innerHTML = "ÁR: " + Csipos_pizza + " Ft";
+                    }
+                    
+                    const Gombas_pizza_ar = document.getElementsByClassName("Gombas_pizza");
+                    for (let i = 0; i < Gombas_pizza_ar.length; i++) {
+                        Gombas_pizza_ar[i].innerHTML = "ÁR: " + Gombas_pizza + " Ft";
+                    }    
+
+                    const Gyrosos_pizza_ar = document.getElementsByClassName("Gyrosos_pizza");
+                    for (let i = 0; i < Gyrosos_pizza_ar.length; i++) {
+                        Gyrosos_pizza_ar[i].innerHTML = "ÁR: " + Gyrosos_pizza + " Ft";
+                    }    
+
+                    const Hawaii_pizza_ar = document.getElementsByClassName("Hawaii_pizza");
+                    for (let i = 0; i < Hawaii_pizza_ar.length; i++) {
+                        Hawaii_pizza_ar[i].innerHTML = "ÁR: " + Hawaii_pizza + " Ft";
+                    }    
+
+                    const Sajtos_pizza_ar = document.getElementsByClassName("Sajtos_pizza");
+                    for (let i = 0; i < Sajtos_pizza_ar.length; i++) {
+                        Sajtos_pizza_ar[i].innerHTML = "ÁR: " + Sajtos_pizza + " Ft";
+                    }    
+
+                    const Fidesz_pizza_ar = document.getElementsByClassName("Fidesz_pizza");
+                    for (let i = 0; i < Fidesz_pizza_ar.length; i++) {
+                        Fidesz_pizza_ar[i].innerHTML = "ÁR: " + Fidesz_pizza + " Ft";
+                    }    
+
+                    const Sonkas_kukoricas_ar = document.getElementsByClassName("Sonkas_kukoricas");
+                    for (let i = 0; i < Sonkas_kukoricas_ar.length; i++) {
+                        Sonkas_kukoricas_ar[i].innerHTML = "ÁR: " + Sonkas_kukoricas + " Ft";
+                    }    
+                }              
 
         // Termék keresés
         var searchInput = document.querySelector('#search-input');
@@ -624,3 +659,8 @@
                 }
             });
         });
+    </script>
+
+</body>
+
+</html>
