@@ -98,19 +98,6 @@
             text-align: center;
             color: #450303
         }
-        .felirat2{
-            text-align: center;
-            color: #4e0303
-        }
-        .felirat3{
-            text-align: center;
-            color: #ff0000
-        }
-        .felirat4{
-            text-align: center;
-            
-        }
-
         .card-title{
             color: #ed2939
         }
@@ -224,7 +211,7 @@
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Extra Lángos</h5>
                         <p class="card-text"></p>
-                        <p class="Extra_Langos text-bg-danger p-1 mx-2">...</p>
+                        <p class="Extra_langos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -599,12 +586,50 @@
                     console.log(neve);
                     if (neve != null) document.getElementById('név').innerHTML = neve;
                 }
-        function ar(){
-            const Sima_langos_ar = document.getElementsByClassName("Sima_langos");
+       
+                function ar() {
+                    const Sima_langos_ar = document.getElementsByClassName("Sima_langos");
                     for (let i = 0; i < Sima_langos_ar.length; i++) {
                         Sima_langos_ar[i].innerHTML = "ÁR: " + Sima_langos + " Ft";
+                    }  
+
+                    const Extra_langos_ar = document.getElementsByClassName("Extra_langos");
+                    for (let i = 0; i < Extra_langos_ar.length; i++) {
+                        Extra_langos_ar[i].innerHTML = "ÁR: " + Extra_langos + " Ft";
+                    }  
+
+                    const Orias_langos_ar = document.getElementsByClassName("Orias_langos");
+                    for (let i = 0; i < Orias_langos_ar.length; i++) {
+                        Orias_langos_ar[i].innerHTML = "ÁR: " + Orias_langos + " Ft";
+                    }  
+
+                    const Magyaros_langos_ar = document.getElementsByClassName("Magyaros_langos");
+                    for (let i = 0; i < Magyaros_langos_ar.length; i++) {
+                        Magyaros_langos_ar[i].innerHTML = "ÁR: " + Magyaros_langos + " Ft";
+                    }  
+
+                    const Toltot_langos_ar = document.getElementsByClassName("Toltot_langos");
+                    for (let i = 0; i < Toltot_langos_ar.length; i++) {
+                        Toltot_langos_ar[i].innerHTML = "ÁR: " + Toltot_langos + " Ft";
+                    }  
+
+                    const Krumplis_langos_ar = document.getElementsByClassName("Krumplis_langos");
+                    for (let i = 0; i < Krumplis_langos_ar.length; i++) {
+                        Krumplis_langos_ar[i].innerHTML = "ÁR: " + Krumplis_langos + " Ft";
+                    }  
+
+                    const Krumplis_extra_ar = document.getElementsByClassName("Krumplis_extra");
+                    for (let i = 0; i < Krumplis_extra_ar.length; i++) {
+                        Krumplis_extra_ar[i].innerHTML = "ÁR: " + Krumplis_extra + " Ft";
+                    }  
+
+                    const Ketchupos_langos_ar = document.getElementsByClassName("Ketchupos_langos");
+                    for (let i = 0; i < Ketchupos_langos_ar.length; i++) {
+                        Ketchupos_langos_ar[i].innerHTML = "ÁR: " + Ketchupos_langos + " Ft";
+                    }  
+                      
         }
-        }
+        
 
 
         // Termék keresés
