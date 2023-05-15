@@ -125,7 +125,7 @@
 
 </head>
 
-<body onload="nev()">
+<body onload="nev(), ar()">
 
 
     <header class="p-3 text-bg-dark">
@@ -182,7 +182,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title ">Katsu sando </h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
+                        <p class="Katsu_sando text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Tojáskrémes szendvics</h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 370FT </p>
+                        <p class="Tojaskremes text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -202,7 +202,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Sajtos melegszendvics</h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
+                        <p class="Sajtos text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Halloumi sajtos szendvics </h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 400FT</p>
+                        <p class="Halloumi text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Monte Cristo szendvics </h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 370FT</p>
+                        <p class="Monte_Cristo text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Club szendvics</h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 370FT </p>
+                        <p class="Club text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -247,7 +247,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">BLT szendvics</h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 380FT</p>
+                        <p class="Blt text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -257,7 +257,7 @@
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Peanut butter jelly sandwich</h5>
-                        <p class="text-bg-danger p-1 mx-2">ÁR: 380FT</p>
+                        <p class="Pbj text-bg-danger p-1 mx-2">...</p>
                     </div>
                 </div>
             </div>
@@ -349,17 +349,67 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous">
             </script>
-
-
     <script>
+                var Katsu_sando = 370;
+                var Tojaskremes = 370;
+                var Sajtos = 370;
+                var Halloumi = 400;
+                var Monte_cristo = 370;
+                var Club = 370;
+                var Blt = 380;
+                var Pbj = 380;
+
+
+
         function nev(){
             const neve = localStorage.getItem("name");
             console.log(neve);
             if (neve != null) document.getElementById('név').innerHTML = neve;
         }
-    </script>
+        function ar() {
+                    const Katsu_sando_ar = document.getElementsByClassName("Katsu_sando");
+                    for (let i = 0; i < Katsu_sando_ar.length; i++) {
+                        Katsu_sando_ar[i].innerHTML = "ÁR: " + Katsu_sando + " Ft";
+                    }    
 
-    <script>
+                    const Tojaskremes_ar = document.getElementsByClassName("Tojaskremes");
+                    for (let i = 0; i < Tojaskremes_ar.length; i++) {
+                        Tojaskremes_ar[i].innerHTML = "ÁR: " + Tojaskremes + " Ft";
+                    }    
+
+                    const Sajtos_ar = document.getElementsByClassName("Sajtos");
+                    for (let i = 0; i < Sajtos_ar.length; i++) {
+                        Sajtos_ar[i].innerHTML = "ÁR: " + Sajtos + " Ft";
+                    }    
+
+                    const Halloumi_ar = document.getElementsByClassName("Halloumi");
+                    for (let i = 0; i < Halloumi_ar.length; i++) {
+                        Halloumi_ar[i].innerHTML = "ÁR: " + Halloumi + " Ft";
+                    }    
+
+                    const Monte_cristo_ar = document.getElementsByClassName("Monte_cristo");
+                    for (let i = 0; i < Monte_cristo_ar.length; i++) {
+                        Monte_cristo_ar[i].innerHTML = "ÁR: " + Monte_cristo + " Ft";
+                    }    
+
+                    const Club_ar = document.getElementsByClassName("Club");
+                    for (let i = 0; i < Club_ar.length; i++) {
+                        Club_ar[i].innerHTML = "ÁR: " + Club + " Ft";
+                    }    
+
+                    const Blt_ar = document.getElementsByClassName("Blt");
+                    for (let i = 0; i < Blt_ar.length; i++) {
+                        Blt_ar[i].innerHTML = "ÁR: " + Blt + " Ft";
+                    }    
+
+                    const Pbj_ar = document.getElementsByClassName("Pbj");
+                    for (let i = 0; i < Pbj_ar.length; i++) {
+                        Pbj_ar[i].innerHTML = "ÁR: " + Pbj + " Ft";
+                    }    
+                }
+   
+
+    
         // Termék keresés
         var searchInput = document.querySelector('#search-input');
         var productCards = document.querySelectorAll('.card');
