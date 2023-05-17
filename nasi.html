@@ -181,7 +181,7 @@
         <!-- TERMÉK 1 -->
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#mars_csoki">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/mars_csoki.jpg"
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/marscsoki.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title ">Mars csokoládé</h5>
@@ -394,7 +394,7 @@
             <div class="col-sm-3">
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#extra_negro_cukor">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/Extra_negro_cukor.jpg"
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/negrocukorextra.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Extra erős negro cukor</h5>
@@ -434,7 +434,7 @@
             <div class="col-sm-3">
 
                 <div class="card" data-bs-toggle="modal" data-bs-target="#mentolos_negro_cukor">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/Mentolos_negro_cukor.jpg"
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/negrocukormentol.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Mentolos negro cukor</h5>
@@ -602,7 +602,7 @@
             <!-- TERMÉK 3-->
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#foldimogyi_nagy">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/foldimogyi_nagy.jpg"
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/mogyi_nagy.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Foldimogyi_nagy</h5>
@@ -641,7 +641,7 @@
             <!--- TERMÉK 4 -->
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#foldimogyi_kis">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/foldimogyi_kis.jpg"
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/mogyi_kis.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Földimogyoró pörkölt, sózott</h5>
@@ -724,7 +724,7 @@
             <!-- TERMÉK 2 -->
             <div class="col-sm-3">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#pizza_kreker">
-                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/pizza_kreker.jpg"
+                    <img src="https://sandorpeteer.github.io/9C_2023_BUFE_SHOP/img/nasi/pizzakreker.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                         <h5 class="card-title">Pizzás kréker</h5>
@@ -939,27 +939,64 @@
                     for (let i = 0; i < Mars_csoki_ar.length; i++) {
                         Mars_csoki_ar[i].innerHTML = "ÁR: " + Mars_csoki + " Ft";
                     }
-                }
-
-                document.getElementById('Mars_csoki').innerHTML = "ÁR: " + coca_cola_light + " Ft";
-                document.getElementById('Sport_csoki').innerHTML = "ÁR: " + coca_cola_zero + " Ft";
-                document.getElementById('Twix_csoki').innerHTML = "ÁR: " + coca_cola_cherry + " Ft";
-                document.getElementById('Snickers_csoki').innerHTML = "ÁR: " + fanta_narancs + " Ft";
-                document.getElementById('Negro_cukor').innerHTML = "ÁR: " + fanta_narancs_zero + " Ft";
-                document.getElementById('Extra_negro_cukor').innerHTML = "ÁR: " + sprite + " Ft";
-                document.getElementById('Mentolos_negro_cukor').innerHTML = "ÁR: " + sprite_zero + " Ft";
-                document.getElementById('Feketeribizlis_negro_cukor').innerHTML = "ÁR: " + cappy_multivitamin + " Ft";
-                document.getElementById('Pringles_natur').innerHTML = "ÁR: " + cappy_őszibarack + " Ft";
-                document.getElementById('Pringles_tejfol_hagyma').innerHTML = "ÁR: " + cappy_alma + " Ft";
-                document.getElementById('Mogyi_nagy').innerHTML = "ÁR: " + cappy_narancs + " Ft";
-                document.getElementById('Mogyi_kis').innerHTML = "ÁR: " + hell_classic + " Ft";
-                document.getElementById('Sajtos_kreker').innerHTML = "ÁR: " + hell_watermelon + " Ft";
-                document.getElementById('Pizza_kreker').innerHTML = "ÁR: " + hell_apple + " Ft";
-                document.getElementById('Sos_kreker').innerHTML = "ÁR: " + hell_grape + " Ft";
-                document.getElementById('Makos_szezam_kreker').innerHTML = "ÁR: " + hell_grapefruit + " Ft";
-
-
-                
+                    const Sport_csoki_ar = document.getElementsByClassName("Sport_csoki");
+                    for (let i = 0; i < Sport_csoki_ar.length; i++) {
+                        Sport_csoki_ar[i].innerHTML = "ÁR: " + Sport_csoki_ar + " Ft";
+                    }
+                    const Twix_csoki_ar = document.getElementsByClassName("Twix_csoki");
+                    for (let i = 0; i < Twix_csoki_ar.length; i++) {
+                        Twix_csoki_ar[i].innerHTML = "ÁR: " + Twix_csoki_ar + " Ft";
+                    }
+                    const Snickers_csoki_ar = document.getElementsByClassName("Snickers_csoki");
+                    for (let i = 0; i < Snickers_csoki_ar.length; i++) {
+                        Snickers_csoki_ar[i].innerHTML = "ÁR: " + Snickers_csoki + " Ft";
+                    }
+                    const Negro_cukor_ar = document.getElementsByClassName("Negro_cukor");
+                    for (let i = 0; i < Negro_cukor_ar.length; i++) {
+                        Negro_cukor_ar[i].innerHTML = "ÁR: " + Negro_cukor + " Ft";
+                    }
+                    const Extra_negro_cukor_ar = document.getElementsByClassName("Extra_negro_cukor");
+                    for (let i = 0; i < Extra_negro_cukor_ar.length; i++) {
+                        Extra_negro_cukor_ar[i].innerHTML = "ÁR: " + Extra_negro_cukor + " Ft";
+                    }
+                    const Mentolos_negro_cukor_ar = document.getElementsByClassName("Mentolos_negro_cukor");
+                    for (let i = 0; i < Mentolos_negro_cukor_ar.length; i++) {
+                        Mentolos_negro_cukor_ar[i].innerHTML = "ÁR: " + Mentolos_negro_cukor + " Ft";
+                    }
+                    const Feketeribizlis_negro_cukor_ar = document.getElementsByClassName("Feketeribizlis_negro_cukor");
+                    for (let i = 0; i < Feketeribizlis_negro_cukor_ar.length; i++) {
+                        Feketeribizlis_negro_cukor_ar[i].innerHTML = "ÁR: " + Feketeribizlis_negro_cukor + " Ft";
+                    }
+                    const Pringles_natur_ar = document.getElementsByClassName("Pringles_natur");
+                    for (let i = 0; i < Pringles_natur_ar.length; i++) {
+                        Pringles_natur_ar[i].innerHTML = "ÁR: " + Pringles_natur + " Ft";
+                    }
+                    const Mogyi_nagy_ar = document.getElementsByClassName("Mogyi_nagy");
+                    for (let i = 0; i < Mogyi_nagy_ar.length; i++) {
+                        Mogyi_nagy_ar[i].innerHTML = "ÁR: " + Mogyi_nagy + " Ft";
+                    }
+                    const Mogyi_kis_ar = document.getElementsByClassName("Mogyi_kis");
+                    for (let i = 0; i < Mogyi_kis_ar.length; i++) {
+                        Mogyi_kis_ar[i].innerHTML = "ÁR: " + Mogyi_kis + " Ft";
+                    }
+                    const Sajtos_kreker_ar = document.getElementsByClassName("Sajtos_kreker");
+                    for (let i = 0; i < Sajtos_kreker_ar.length; i++) {
+                        Sajtos_kreker_ar[i].innerHTML = "ÁR: " + Sajtos_kreker + " Ft";
+                    }
+                    const Pizza_kreker_ar = document.getElementsByClassName("Pizza_kreker");
+                    for (let i = 0; i < Pizza_kreker_ar.length; i++) {
+                        Pizza_kreker_ar[i].innerHTML = "ÁR: " + Pizza_kreker + " Ft";
+                    }
+                    const Sos_kreker_ar = document.getElementsByClassName("Sos_kreker");
+                    for (let i = 0; i < Sos_kreker_ar.length; i++) {
+                        Sos_kreker_ar[i].innerHTML = "ÁR: " + Sos_kreker + " Ft";
+                    }
+                    const Makos_szezam_kreker_ar = document.getElementsByClassName("Makos_szezam_kreker");
+                    for (let i = 0; i < Makos_szezam_kreker_ar.length; i++) {
+                        Makos_szezam_kreker_ar[i].innerHTML = "ÁR: " + Makos_szezam_kreker + " Ft";
+                    }
+                    
+                }          
     </script>
 
     <script>
