@@ -194,7 +194,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                            <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                            <button type="button" id="btn" class="btn btn-primary" onclick="Cart(this)" >KOSÁRBA</button>
                         </div>
                     </div>
                 </div>
@@ -236,7 +236,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn2" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn3" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -315,7 +315,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn4" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -357,7 +357,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn5" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -396,7 +396,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn6" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -435,7 +435,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn7" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -475,7 +475,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">MÉGSEM</button>
-                                <button type="button" class="btn btn-primary">KOSÁRBA</button>
+                                <button type="button" id="btn8" class="btn btn-primary" onclick="Cart(this)">KOSÁRBA</button>
                             </div>
                         </div>
                     </div>
@@ -647,7 +647,59 @@
                     card.style.display = 'none';
                 }
             });
-        });0
+        });
+
+
+
+        // localstorage 
+
+        const Products = {}
+        var listitems = [0,0,0,0,0,0,0,0,0,0]
+        var Span = document.getElementById('Span')
+        var x = listitems.length -10 
+        function Cart(Element) {
+            var btn = document.getElementById(Element.id)
+            if (document.getElementById('btn') == btn){
+                listitems [0]++
+                Products.Langos = listitems[0]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn2') == btn){
+                listitems[1]++
+                Products.Langos2 = listitems[1]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn3') == btn){
+                listitems[2]++
+                Products.Langos3 = listitems[2]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn4') == btn){
+                listitems[3]++
+                Products.Langos4 = listitems[3]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn5') == btn){
+                listitems[4]++
+                Products.Langos5 = listitems[4]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn6') == btn){
+                listitems[5]++
+                Products.Langos6 = listitems[5]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn7') == btn){
+                listitems[6]++
+                Products.Langos7 = listitems[6]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+            if (document.getElementById('btn8') == btn){
+                listitems[7]++
+                Products.Langos8 = listitems[7]
+                localStorage.setItem('Products', JSON.stringify(Products))
+            }
+        }
     </script>
 
 </body>
